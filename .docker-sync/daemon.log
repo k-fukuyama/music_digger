@@ -1,0 +1,1155 @@
+          ok  Starting native_osx for sync sync-volume
+          ok  sync-volume container still running, restarting unison in container
+unison: stopped
+unison: started
+     success  Sync container started
+     success  Showing unison logs from your sync container: sync-volume
+[2020-06-09 17:41:40 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:41:39.50 on 09 Jun 2020
+[2020-06-09 17:41:40 +0900] Sync Log:  [BGN] Copying .docker-sync/daemon.log from /host_sync to /app_sync
+[2020-06-09 17:41:40 +0900] Sync Log:  [END] Copying .docker-sync/daemon.log
+[2020-06-09 17:41:40 +0900] Sync Log:  [BGN] Copying .docker-sync/daemon.pid from /host_sync to /app_sync
+[2020-06-09 17:41:40 +0900] Sync Log:  [END] Copying .docker-sync/daemon.pid
+[2020-06-09 17:41:40 +0900] Sync Log:  [BGN] Copying tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 17:41:40 +0900] Sync Log:  [END] Copying tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 17:41:40 +0900] Sync Log:  [BGN] Copying tmp/db/pg_stat_tmp/db_13408.stat from /host_sync to /app_sync
+[2020-06-09 17:41:40 +0900] Sync Log:  [END] Copying tmp/db/pg_stat_tmp/db_13408.stat
+[2020-06-09 17:41:40 +0900] Sync Log:  [BGN] Copying tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 17:41:40 +0900] Sync Log:  [END] Copying tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 17:41:40 +0900] Sync Log:  [BGN] Copying tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 17:41:40 +0900] Sync Log:  [END] Copying tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 17:41:40 +0900] Sync Log:  [BGN] Copying tmp/db/pg_subtrans from /host_sync to /app_sync
+[2020-06-09 17:41:40 +0900] Sync Log:  [END] Copying tmp/db/pg_subtrans
+[2020-06-09 17:41:40 +0900] Sync Log:  [BGN] Copying tmp/db/pg_tblspc from /host_sync to /app_sync
+[2020-06-09 17:41:40 +0900] Sync Log:  [END] Copying tmp/db/pg_tblspc
+[2020-06-09 17:41:40 +0900] Sync Log:  [BGN] Copying tmp/db/pg_twophase from /host_sync to /app_sync
+[2020-06-09 17:41:40 +0900] Sync Log:  [END] Copying tmp/db/pg_twophase
+[2020-06-09 17:41:40 +0900] Sync Log:  [BGN] Copying tmp/db/pg_wal from /host_sync to /app_sync
+[2020-06-09 17:41:41 +0900] Sync Log:  [END] Copying tmp/db/pg_wal
+[2020-06-09 17:41:41 +0900] Sync Log:  [BGN] Copying tmp/db/pg_xact from /host_sync to /app_sync
+[2020-06-09 17:41:41 +0900] Sync Log:  [END] Copying tmp/db/pg_xact
+[2020-06-09 17:41:41 +0900] Sync Log:  [BGN] Copying tmp/db/postgresql.auto.conf from /host_sync to /app_sync
+[2020-06-09 17:41:41 +0900] Sync Log:  [END] Copying tmp/db/postgresql.auto.conf
+[2020-06-09 17:41:41 +0900] Sync Log:  [BGN] Copying tmp/db/postgresql.conf from /host_sync to /app_sync
+[2020-06-09 17:41:41 +0900] Sync Log:  [END] Copying tmp/db/postgresql.conf
+[2020-06-09 17:41:41 +0900] Sync Log:  [BGN] Copying tmp/db/postmaster.opts from /host_sync to /app_sync
+[2020-06-09 17:41:41 +0900] Sync Log:  [END] Copying tmp/db/postmaster.opts
+[2020-06-09 17:41:41 +0900] Sync Log:  [BGN] Copying tmp/db/postmaster.pid from /host_sync to /app_sync
+[2020-06-09 17:41:41 +0900] Sync Log:  [END] Copying tmp/db/postmaster.pid
+[2020-06-09 17:41:41 +0900] Sync Log:  [BGN] Copying tmp/development_secret.txt from /host_sync to /app_sync
+[2020-06-09 17:41:41 +0900] Sync Log:  [END] Copying tmp/development_secret.txt
+[2020-06-09 17:41:41 +0900] Sync Log:  [BGN] Copying tmp/pids from /host_sync to /app_sync
+[2020-06-09 17:41:41 +0900] Sync Log:  [END] Copying tmp/pids
+[2020-06-09 17:41:41 +0900] Sync Log:  [BGN] Copying tmp/restart.txt from /host_sync to /app_sync
+[2020-06-09 17:41:41 +0900] Sync Log:  [END] Copying tmp/restart.txt
+[2020-06-09 17:41:41 +0900] Sync Log:  [BGN] Copying tmp/sockets from /host_sync to /app_sync
+[2020-06-09 17:41:41 +0900] Sync Log:  [END] Copying tmp/sockets
+[2020-06-09 17:41:41 +0900] Sync Log:  [BGN] Copying tmp/storage from /host_sync to /app_sync
+[2020-06-09 17:41:41 +0900] Sync Log:  [END] Copying tmp/storage
+[2020-06-09 17:41:41 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:41:40.18 on 09 Jun 2020
+[2020-06-09 17:41:41 +0900] Sync Log:  Synchronization complete at 17:41:40  (20 items transferred, 0 skipped, 0 failed)
+[2020-06-09 17:41:43 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:41:42.76 on 09 Jun 2020
+[2020-06-09 17:41:43 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 17:41:43 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 17:41:43 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 17:41:43 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 17:41:43 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:41:42.82 on 09 Jun 2020
+[2020-06-09 17:41:43 +0900] Sync Log:  Synchronization complete at 17:41:42  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 17:41:45 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:41:44.24 on 09 Jun 2020
+[2020-06-09 17:41:45 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_13408.stat from /host_sync to /app_sync
+[2020-06-09 17:41:45 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_13408.stat
+[2020-06-09 17:41:45 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:41:44.25 on 09 Jun 2020
+[2020-06-09 17:41:45 +0900] Sync Log:  Synchronization complete at 17:41:44  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:42:12 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:42:11.91 on 09 Jun 2020
+[2020-06-09 17:42:12 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 17:42:12 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 17:42:12 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:42:11.92 on 09 Jun 2020
+[2020-06-09 17:42:12 +0900] Sync Log:  Synchronization complete at 17:42:11  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:42:13 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:42:13.05 on 09 Jun 2020
+[2020-06-09 17:42:13 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 17:42:13 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 17:42:13 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 17:42:13 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 17:42:13 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:42:13.08 on 09 Jun 2020
+[2020-06-09 17:42:14 +0900] Sync Log:  Synchronization complete at 17:42:13  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 17:42:21 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:42:20.53 on 09 Jun 2020
+[2020-06-09 17:42:21 +0900] Sync Log:  [BGN] Deleting tmp/pids/server.pid from /app_sync
+[2020-06-09 17:42:21 +0900] Sync Log:  [END] Deleting tmp/pids/server.pid
+[2020-06-09 17:42:21 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:42:20.53 on 09 Jun 2020
+[2020-06-09 17:42:21 +0900] Sync Log:  Synchronization complete at 17:42:20  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:42:28 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:42:27.26 on 09 Jun 2020
+[2020-06-09 17:42:28 +0900] Sync Log:  [BGN] Copying tmp/pids/server.pid from /host_sync to /app_sync
+[2020-06-09 17:42:28 +0900] Sync Log:  [END] Copying tmp/pids/server.pid
+[2020-06-09 17:42:28 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:42:27.27 on 09 Jun 2020
+[2020-06-09 17:42:28 +0900] Sync Log:  Synchronization complete at 17:42:27  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:42:38 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:42:37.70 on 09 Jun 2020
+[2020-06-09 17:42:38 +0900] Sync Log:  [BGN] Updating file log/development.log from /host_sync to /app_sync
+[2020-06-09 17:42:38 +0900] Sync Log:  [END] Updating file log/development.log
+[2020-06-09 17:42:38 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:42:37.75 on 09 Jun 2020
+[2020-06-09 17:42:38 +0900] Sync Log:  Synchronization complete at 17:42:37  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:42:43 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:42:42.81 on 09 Jun 2020
+[2020-06-09 17:42:43 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 17:42:43 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 17:42:43 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_13408.stat from /host_sync to /app_sync
+[2020-06-09 17:42:43 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_13408.stat
+[2020-06-09 17:42:43 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 17:42:43 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 17:42:43 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:42:42.88 on 09 Jun 2020
+[2020-06-09 17:42:43 +0900] Sync Log:  Synchronization complete at 17:42:42  (3 items transferred, 0 skipped, 0 failed)
+[2020-06-09 17:43:13 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:43:13.06 on 09 Jun 2020
+[2020-06-09 17:43:13 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 17:43:13 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 17:43:13 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:43:13.08 on 09 Jun 2020
+[2020-06-09 17:43:14 +0900] Sync Log:  Synchronization complete at 17:43:13  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:43:15 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:43:14.31 on 09 Jun 2020
+[2020-06-09 17:43:15 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 17:43:15 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 17:43:15 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 17:43:15 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 17:43:15 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:43:14.36 on 09 Jun 2020
+[2020-06-09 17:43:15 +0900] Sync Log:  Synchronization complete at 17:43:14  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 17:43:27 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:43:27.09 on 09 Jun 2020
+[2020-06-09 17:43:27 +0900] Sync Log:  [BGN] Updating file tmp/db/postmaster.pid from /host_sync to /app_sync
+[2020-06-09 17:43:27 +0900] Sync Log:  [END] Updating file tmp/db/postmaster.pid
+[2020-06-09 17:43:27 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:43:27.10 on 09 Jun 2020
+[2020-06-09 17:43:27 +0900] Sync Log:  Synchronization complete at 17:43:27  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:43:46 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:43:45.60 on 09 Jun 2020
+[2020-06-09 17:43:46 +0900] Sync Log:  [BGN] Updating file tmp/db/postmaster.pid from /host_sync to /app_sync
+[2020-06-09 17:43:46 +0900] Sync Log:  [END] Updating file tmp/db/postmaster.pid
+[2020-06-09 17:43:46 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:43:45.62 on 09 Jun 2020
+[2020-06-09 17:43:46 +0900] Sync Log:  Synchronization complete at 17:43:45  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:44:02 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:44:01.83 on 09 Jun 2020
+[2020-06-09 17:44:02 +0900] Sync Log:  [BGN] Deleting tmp/db/global/pg_internal.init from /app_sync
+[2020-06-09 17:44:02 +0900] Sync Log:  [END] Deleting tmp/db/global/pg_internal.init
+[2020-06-09 17:44:02 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:44:01.83 on 09 Jun 2020
+[2020-06-09 17:44:02 +0900] Sync Log:  Synchronization complete at 17:44:01  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:44:05 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:44:04.26 on 09 Jun 2020
+[2020-06-09 17:44:05 +0900] Sync Log:  [BGN] Updating file tmp/db/global/pg_control from /host_sync to /app_sync
+[2020-06-09 17:44:05 +0900] Sync Log:  [END] Updating file tmp/db/global/pg_control
+[2020-06-09 17:44:05 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 17:44:05 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 17:44:05 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_wal/000000010000000000000001 from /host_sync to /app_sync
+[2020-06-09 17:44:05 +0900] Sync Log:  [END] Updating file tmp/db/pg_wal/000000010000000000000001
+[2020-06-09 17:44:05 +0900] Sync Log:  [BGN] Updating file tmp/db/postmaster.pid from /host_sync to /app_sync
+[2020-06-09 17:44:05 +0900] Sync Log:  [END] Updating file tmp/db/postmaster.pid
+[2020-06-09 17:44:05 +0900] Sync Log:  [BGN] Deleting tmp/db/base/13408/pg_internal.init from /app_sync
+[2020-06-09 17:44:05 +0900] Sync Log:  [END] Deleting tmp/db/base/13408/pg_internal.init
+[2020-06-09 17:44:05 +0900] Sync Log:  [BGN] Deleting tmp/db/base/16385/pg_internal.init from /app_sync
+[2020-06-09 17:44:05 +0900] Sync Log:  [END] Deleting tmp/db/base/16385/pg_internal.init
+[2020-06-09 17:44:05 +0900] Sync Log:  [BGN] Deleting tmp/db/pg_stat_tmp/db_0.stat from /app_sync
+[2020-06-09 17:44:05 +0900] Sync Log:  [END] Deleting tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 17:44:05 +0900] Sync Log:  [BGN] Deleting tmp/db/pg_stat_tmp/db_13408.stat from /app_sync
+[2020-06-09 17:44:05 +0900] Sync Log:  [END] Deleting tmp/db/pg_stat_tmp/db_13408.stat
+[2020-06-09 17:44:05 +0900] Sync Log:  [BGN] Deleting tmp/db/pg_stat_tmp/db_16385.stat from /app_sync
+[2020-06-09 17:44:05 +0900] Sync Log:  [END] Deleting tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 17:44:05 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:44:04.73 on 09 Jun 2020
+[2020-06-09 17:44:05 +0900] Sync Log:  Synchronization complete at 17:44:04  (9 items transferred, 0 skipped, 0 failed)
+[2020-06-09 17:44:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:44:18.32 on 09 Jun 2020
+[2020-06-09 17:44:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_wal/000000010000000000000001 from /host_sync to /app_sync
+[2020-06-09 17:44:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_wal/000000010000000000000001
+[2020-06-09 17:44:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:44:18.74 on 09 Jun 2020
+[2020-06-09 17:44:19 +0900] Sync Log:  Synchronization complete at 17:44:18  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:45:04 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:45:03.55 on 09 Jun 2020
+[2020-06-09 17:45:04 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 17:45:04 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 17:45:04 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:45:03.56 on 09 Jun 2020
+[2020-06-09 17:45:04 +0900] Sync Log:  Synchronization complete at 17:45:03  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:46:04 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:46:03.58 on 09 Jun 2020
+[2020-06-09 17:46:04 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 17:46:04 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 17:46:04 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:46:03.59 on 09 Jun 2020
+[2020-06-09 17:46:04 +0900] Sync Log:  Synchronization complete at 17:46:03  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:47:04 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:47:03.57 on 09 Jun 2020
+[2020-06-09 17:47:04 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 17:47:04 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 17:47:04 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:47:03.59 on 09 Jun 2020
+[2020-06-09 17:47:04 +0900] Sync Log:  Synchronization complete at 17:47:03  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:47:52 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:47:51.80 on 09 Jun 2020
+[2020-06-09 17:47:52 +0900] Sync Log:  [BGN] Updating file tmp/db/global/pg_control from /host_sync to /app_sync
+[2020-06-09 17:47:52 +0900] Sync Log:  [END] Updating file tmp/db/global/pg_control
+[2020-06-09 17:47:52 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 17:47:52 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 17:47:52 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_wal/000000010000000000000001 from /host_sync to /app_sync
+[2020-06-09 17:47:52 +0900] Sync Log:  [END] Updating file tmp/db/pg_wal/000000010000000000000001
+[2020-06-09 17:47:52 +0900] Sync Log:  [BGN] Updating file tmp/db/postmaster.pid from /host_sync to /app_sync
+[2020-06-09 17:47:52 +0900] Sync Log:  [END] Updating file tmp/db/postmaster.pid
+[2020-06-09 17:47:52 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:47:52.36 on 09 Jun 2020
+[2020-06-09 17:47:52 +0900] Sync Log:  Synchronization complete at 17:47:52  (4 items transferred, 0 skipped, 0 failed)
+[2020-06-09 17:48:06 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:48:06.29 on 09 Jun 2020
+[2020-06-09 17:48:06 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_wal/000000010000000000000001 from /host_sync to /app_sync
+[2020-06-09 17:48:07 +0900] Sync Log:  [END] Updating file tmp/db/pg_wal/000000010000000000000001
+[2020-06-09 17:48:07 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:48:06.56 on 09 Jun 2020
+[2020-06-09 17:48:07 +0900] Sync Log:  Synchronization complete at 17:48:06  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:48:52 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:48:51.63 on 09 Jun 2020
+[2020-06-09 17:48:52 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 17:48:52 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 17:48:52 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:48:51.64 on 09 Jun 2020
+[2020-06-09 17:48:52 +0900] Sync Log:  Synchronization complete at 17:48:51  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:49:52 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:49:51.67 on 09 Jun 2020
+[2020-06-09 17:49:52 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 17:49:52 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 17:49:52 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:49:51.68 on 09 Jun 2020
+[2020-06-09 17:49:52 +0900] Sync Log:  Synchronization complete at 17:49:51  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:50:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:50:48.58 on 09 Jun 2020
+[2020-06-09 17:50:48 +0900] Sync Log:  [BGN] Updating file tmp/db/global/pg_control from /host_sync to /app_sync
+[2020-06-09 17:50:48 +0900] Sync Log:  [END] Updating file tmp/db/global/pg_control
+[2020-06-09 17:50:48 +0900] Sync Log:  [BGN] Copying tmp/db/pg_stat/global.stat from /host_sync to /app_sync
+[2020-06-09 17:50:48 +0900] Sync Log:  [END] Copying tmp/db/pg_stat/global.stat
+[2020-06-09 17:50:48 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_wal/000000010000000000000001 from /host_sync to /app_sync
+[2020-06-09 17:50:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_wal/000000010000000000000001
+[2020-06-09 17:50:49 +0900] Sync Log:  [BGN] Deleting tmp/db/pg_stat_tmp/global.stat from /app_sync
+[2020-06-09 17:50:49 +0900] Sync Log:  [END] Deleting tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 17:50:49 +0900] Sync Log:  [BGN] Deleting tmp/db/postmaster.pid from /app_sync
+[2020-06-09 17:50:49 +0900] Sync Log:  [END] Deleting tmp/db/postmaster.pid
+[2020-06-09 17:50:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:50:49.20 on 09 Jun 2020
+[2020-06-09 17:50:49 +0900] Sync Log:  Synchronization complete at 17:50:49  (5 items transferred, 0 skipped, 0 failed)
+[2020-06-09 17:50:54 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:50:54.39 on 09 Jun 2020
+[2020-06-09 17:50:54 +0900] Sync Log:  [BGN] Updating file tmp/db/global/pg_control from /host_sync to /app_sync
+[2020-06-09 17:50:54 +0900] Sync Log:  [END] Updating file tmp/db/global/pg_control
+[2020-06-09 17:50:54 +0900] Sync Log:  [BGN] Copying tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 17:50:54 +0900] Sync Log:  [END] Copying tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 17:50:54 +0900] Sync Log:  [BGN] Deleting tmp/db/pg_stat/global.stat from /app_sync
+[2020-06-09 17:50:54 +0900] Sync Log:  [END] Deleting tmp/db/pg_stat/global.stat
+[2020-06-09 17:50:54 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:50:54.43 on 09 Jun 2020
+[2020-06-09 17:50:54 +0900] Sync Log:  Synchronization complete at 17:50:54  (3 items transferred, 0 skipped, 0 failed)
+[2020-06-09 17:50:59 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:50:59.42 on 09 Jun 2020
+[2020-06-09 17:50:59 +0900] Sync Log:  [BGN] Copying tmp/db/postmaster.pid from /host_sync to /app_sync
+[2020-06-09 17:50:59 +0900] Sync Log:  [END] Copying tmp/db/postmaster.pid
+[2020-06-09 17:50:59 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:50:59.43 on 09 Jun 2020
+[2020-06-09 17:50:59 +0900] Sync Log:  Synchronization complete at 17:50:59  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:51:08 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:51:08.33 on 09 Jun 2020
+[2020-06-09 17:51:08 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_wal/000000010000000000000001 from /host_sync to /app_sync
+[2020-06-09 17:51:08 +0900] Sync Log:  [END] Updating file tmp/db/pg_wal/000000010000000000000001
+[2020-06-09 17:51:08 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:51:08.64 on 09 Jun 2020
+[2020-06-09 17:51:08 +0900] Sync Log:  Synchronization complete at 17:51:08  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:51:53 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:51:53.71 on 09 Jun 2020
+[2020-06-09 17:51:53 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 17:51:53 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 17:51:53 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:51:53.73 on 09 Jun 2020
+[2020-06-09 17:51:53 +0900] Sync Log:  Synchronization complete at 17:51:53  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:52:53 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:52:53.81 on 09 Jun 2020
+[2020-06-09 17:52:53 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 17:52:53 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 17:52:53 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:52:53.83 on 09 Jun 2020
+[2020-06-09 17:52:53 +0900] Sync Log:  Synchronization complete at 17:52:53  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:53:54 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:53:53.81 on 09 Jun 2020
+[2020-06-09 17:53:54 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 17:53:54 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 17:53:54 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:53:53.82 on 09 Jun 2020
+[2020-06-09 17:53:54 +0900] Sync Log:  Synchronization complete at 17:53:53  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:54:54 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:54:53.81 on 09 Jun 2020
+[2020-06-09 17:54:54 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 17:54:54 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 17:54:54 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:54:53.82 on 09 Jun 2020
+[2020-06-09 17:54:54 +0900] Sync Log:  Synchronization complete at 17:54:53  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:55:03 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:55:02.25 on 09 Jun 2020
+[2020-06-09 17:55:03 +0900] Sync Log:  [BGN] Updating file tmp/db/global/pg_control from /host_sync to /app_sync
+[2020-06-09 17:55:03 +0900] Sync Log:  [END] Updating file tmp/db/global/pg_control
+[2020-06-09 17:55:03 +0900] Sync Log:  [BGN] Copying tmp/db/pg_stat/global.stat from /host_sync to /app_sync
+[2020-06-09 17:55:03 +0900] Sync Log:  [END] Copying tmp/db/pg_stat/global.stat
+[2020-06-09 17:55:03 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_wal/000000010000000000000001 from /host_sync to /app_sync
+[2020-06-09 17:55:03 +0900] Sync Log:  [END] Updating file tmp/db/pg_wal/000000010000000000000001
+[2020-06-09 17:55:03 +0900] Sync Log:  [BGN] Deleting tmp/db/pg_stat_tmp/global.stat from /app_sync
+[2020-06-09 17:55:03 +0900] Sync Log:  [END] Deleting tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 17:55:03 +0900] Sync Log:  [BGN] Deleting tmp/db/postmaster.pid from /app_sync
+[2020-06-09 17:55:03 +0900] Sync Log:  [END] Deleting tmp/db/postmaster.pid
+[2020-06-09 17:55:03 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:55:02.66 on 09 Jun 2020
+[2020-06-09 17:55:03 +0900] Sync Log:  Synchronization complete at 17:55:02  (5 items transferred, 0 skipped, 0 failed)
+[2020-06-09 17:56:13 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:56:12.50 on 09 Jun 2020
+[2020-06-09 17:56:13 +0900] Sync Log:  [BGN] Updating file tmp/db/global/pg_control from /host_sync to /app_sync
+[2020-06-09 17:56:13 +0900] Sync Log:  [END] Updating file tmp/db/global/pg_control
+[2020-06-09 17:56:13 +0900] Sync Log:  [BGN] Copying tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 17:56:13 +0900] Sync Log:  [END] Copying tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 17:56:13 +0900] Sync Log:  [BGN] Deleting tmp/db/pg_stat/global.stat from /app_sync
+[2020-06-09 17:56:13 +0900] Sync Log:  [END] Deleting tmp/db/pg_stat/global.stat
+[2020-06-09 17:56:13 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:56:12.52 on 09 Jun 2020
+[2020-06-09 17:56:13 +0900] Sync Log:  Synchronization complete at 17:56:12  (3 items transferred, 0 skipped, 0 failed)
+[2020-06-09 17:56:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:56:17.92 on 09 Jun 2020
+[2020-06-09 17:56:18 +0900] Sync Log:  [BGN] Copying tmp/db/postmaster.pid from /host_sync to /app_sync
+[2020-06-09 17:56:18 +0900] Sync Log:  [END] Copying tmp/db/postmaster.pid
+[2020-06-09 17:56:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:56:17.93 on 09 Jun 2020
+[2020-06-09 17:56:18 +0900] Sync Log:  Synchronization complete at 17:56:17  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:56:28 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:56:27.55 on 09 Jun 2020
+[2020-06-09 17:56:28 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_wal/000000010000000000000001 from /host_sync to /app_sync
+[2020-06-09 17:56:28 +0900] Sync Log:  [END] Updating file tmp/db/pg_wal/000000010000000000000001
+[2020-06-09 17:56:28 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:56:27.88 on 09 Jun 2020
+[2020-06-09 17:56:28 +0900] Sync Log:  Synchronization complete at 17:56:27  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:57:13 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:57:12.76 on 09 Jun 2020
+[2020-06-09 17:57:13 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 17:57:13 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 17:57:13 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:57:12.77 on 09 Jun 2020
+[2020-06-09 17:57:13 +0900] Sync Log:  Synchronization complete at 17:57:12  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 17:57:16 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 17:57:16.11 on 09 Jun 2020
+[2020-06-09 17:57:16 +0900] Sync Log:  [BGN] Updating file tmp/db/global/pg_control from /host_sync to /app_sync
+[2020-06-09 17:57:16 +0900] Sync Log:  [END] Updating file tmp/db/global/pg_control
+[2020-06-09 17:57:16 +0900] Sync Log:  [BGN] Copying tmp/db/pg_stat/global.stat from /host_sync to /app_sync
+[2020-06-09 17:57:16 +0900] Sync Log:  [END] Copying tmp/db/pg_stat/global.stat
+[2020-06-09 17:57:16 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_wal/000000010000000000000001 from /host_sync to /app_sync
+[2020-06-09 17:57:17 +0900] Sync Log:  [END] Updating file tmp/db/pg_wal/000000010000000000000001
+[2020-06-09 17:57:17 +0900] Sync Log:  [BGN] Deleting tmp/db/pg_stat_tmp/global.stat from /app_sync
+[2020-06-09 17:57:17 +0900] Sync Log:  [END] Deleting tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 17:57:17 +0900] Sync Log:  [BGN] Deleting tmp/db/postmaster.pid from /app_sync
+[2020-06-09 17:57:17 +0900] Sync Log:  [END] Deleting tmp/db/postmaster.pid
+[2020-06-09 17:57:17 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 17:57:16.47 on 09 Jun 2020
+[2020-06-09 17:57:17 +0900] Sync Log:  Synchronization complete at 17:57:16  (5 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:02:56 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:02:55.85 on 09 Jun 2020
+[2020-06-09 18:02:56 +0900] Sync Log:  [BGN] Copying .docker-compose.yml.swp from /host_sync to /app_sync
+[2020-06-09 18:02:56 +0900] Sync Log:  [END] Copying .docker-compose.yml.swp
+[2020-06-09 18:02:56 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:02:55.85 on 09 Jun 2020
+[2020-06-09 18:02:56 +0900] Sync Log:  Synchronization complete at 18:02:55  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:03:10 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:03:10.45 on 09 Jun 2020
+[2020-06-09 18:03:10 +0900] Sync Log:  [BGN] Updating file docker-compose.yml from /host_sync to /app_sync
+[2020-06-09 18:03:10 +0900] Sync Log:  [END] Updating file docker-compose.yml
+[2020-06-09 18:03:10 +0900] Sync Log:  [BGN] Deleting .docker-compose.yml.swp from /app_sync
+[2020-06-09 18:03:10 +0900] Sync Log:  [END] Deleting .docker-compose.yml.swp
+[2020-06-09 18:03:10 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:03:10.46 on 09 Jun 2020
+[2020-06-09 18:03:10 +0900] Sync Log:  Synchronization complete at 18:03:10  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:06:27 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:06:26.80 on 09 Jun 2020
+[2020-06-09 18:06:27 +0900] Sync Log:  [BGN] Updating file tmp/db/global/pg_control from /host_sync to /app_sync
+[2020-06-09 18:06:27 +0900] Sync Log:  [END] Updating file tmp/db/global/pg_control
+[2020-06-09 18:06:27 +0900] Sync Log:  [BGN] Copying tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:06:27 +0900] Sync Log:  [END] Copying tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:06:27 +0900] Sync Log:  [BGN] Deleting tmp/db/pg_stat/global.stat from /app_sync
+[2020-06-09 18:06:27 +0900] Sync Log:  [END] Deleting tmp/db/pg_stat/global.stat
+[2020-06-09 18:06:27 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:06:26.81 on 09 Jun 2020
+[2020-06-09 18:06:27 +0900] Sync Log:  Synchronization complete at 18:06:26  (3 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:06:33 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:06:32.67 on 09 Jun 2020
+[2020-06-09 18:06:33 +0900] Sync Log:  [BGN] Updating file tmp/db/global/pg_control from /host_sync to /app_sync
+[2020-06-09 18:06:33 +0900] Sync Log:  [END] Updating file tmp/db/global/pg_control
+[2020-06-09 18:06:33 +0900] Sync Log:  [BGN] Copying tmp/db/pg_stat/global.stat from /host_sync to /app_sync
+[2020-06-09 18:06:33 +0900] Sync Log:  [END] Copying tmp/db/pg_stat/global.stat
+[2020-06-09 18:06:33 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_wal/000000010000000000000001 from /host_sync to /app_sync
+[2020-06-09 18:06:33 +0900] Sync Log:  [END] Updating file tmp/db/pg_wal/000000010000000000000001
+[2020-06-09 18:06:33 +0900] Sync Log:  [BGN] Deleting tmp/db/pg_stat_tmp/global.stat from /app_sync
+[2020-06-09 18:06:33 +0900] Sync Log:  [END] Deleting tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:06:33 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:06:33.06 on 09 Jun 2020
+[2020-06-09 18:06:33 +0900] Sync Log:  Synchronization complete at 18:06:33  (4 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:06:34 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:06:34.16 on 09 Jun 2020
+[2020-06-09 18:06:34 +0900] Sync Log:  [BGN] Deleting tmp/pids/server.pid from /app_sync
+[2020-06-09 18:06:35 +0900] Sync Log:  [END] Deleting tmp/pids/server.pid
+[2020-06-09 18:06:35 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:06:34.16 on 09 Jun 2020
+[2020-06-09 18:06:35 +0900] Sync Log:  Synchronization complete at 18:06:34  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:06:47 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:06:46.32 on 09 Jun 2020
+[2020-06-09 18:06:47 +0900] Sync Log:  [BGN] Updating file tmp/db/global/pg_control from /host_sync to /app_sync
+[2020-06-09 18:06:47 +0900] Sync Log:  [END] Updating file tmp/db/global/pg_control
+[2020-06-09 18:06:47 +0900] Sync Log:  [BGN] Copying tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:06:47 +0900] Sync Log:  [END] Copying tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:06:47 +0900] Sync Log:  [BGN] Deleting tmp/db/pg_stat/global.stat from /app_sync
+[2020-06-09 18:06:47 +0900] Sync Log:  [END] Deleting tmp/db/pg_stat/global.stat
+[2020-06-09 18:06:47 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:06:46.33 on 09 Jun 2020
+[2020-06-09 18:06:47 +0900] Sync Log:  Synchronization complete at 18:06:46  (3 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:06:53 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:06:52.98 on 09 Jun 2020
+[2020-06-09 18:06:53 +0900] Sync Log:  [BGN] Copying tmp/db/postmaster.pid from /host_sync to /app_sync
+[2020-06-09 18:06:53 +0900] Sync Log:  [END] Copying tmp/db/postmaster.pid
+[2020-06-09 18:06:53 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:06:52.98 on 09 Jun 2020
+[2020-06-09 18:06:53 +0900] Sync Log:  Synchronization complete at 18:06:53  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:06:54 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:06:54.18 on 09 Jun 2020
+[2020-06-09 18:06:54 +0900] Sync Log:  [BGN] Copying tmp/pids/server.pid from /host_sync to /app_sync
+[2020-06-09 18:06:54 +0900] Sync Log:  [END] Copying tmp/pids/server.pid
+[2020-06-09 18:06:54 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:06:54.19 on 09 Jun 2020
+[2020-06-09 18:06:55 +0900] Sync Log:  Synchronization complete at 18:06:54  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:06:56 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:06:55.45 on 09 Jun 2020
+[2020-06-09 18:06:56 +0900] Sync Log:  [BGN] Updating file log/development.log from /host_sync to /app_sync
+[2020-06-09 18:06:56 +0900] Sync Log:  [END] Updating file log/development.log
+[2020-06-09 18:06:56 +0900] Sync Log:  [BGN] Copying tmp/db/base/16385/pg_internal.init from /host_sync to /app_sync
+[2020-06-09 18:06:56 +0900] Sync Log:  [END] Copying tmp/db/base/16385/pg_internal.init
+[2020-06-09 18:06:56 +0900] Sync Log:  [BGN] Copying tmp/db/global/pg_internal.init from /host_sync to /app_sync
+[2020-06-09 18:06:56 +0900] Sync Log:  [END] Copying tmp/db/global/pg_internal.init
+[2020-06-09 18:06:56 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:06:55.48 on 09 Jun 2020
+[2020-06-09 18:06:56 +0900] Sync Log:  Synchronization complete at 18:06:55  (3 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:06:58 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:06:57.60 on 09 Jun 2020
+[2020-06-09 18:06:58 +0900] Sync Log:  [BGN] Updating file log/development.log from /host_sync to /app_sync
+[2020-06-09 18:06:58 +0900] Sync Log:  [END] Updating file log/development.log
+[2020-06-09 18:06:58 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:06:57.61 on 09 Jun 2020
+[2020-06-09 18:06:58 +0900] Sync Log:  Synchronization complete at 18:06:57  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:07:02 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:07:01.31 on 09 Jun 2020
+[2020-06-09 18:07:02 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_wal/000000010000000000000001 from /host_sync to /app_sync
+[2020-06-09 18:07:02 +0900] Sync Log:  [END] Updating file tmp/db/pg_wal/000000010000000000000001
+[2020-06-09 18:07:02 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:07:01.64 on 09 Jun 2020
+[2020-06-09 18:07:02 +0900] Sync Log:  Synchronization complete at 18:07:01  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:07:05 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:07:04.91 on 09 Jun 2020
+[2020-06-09 18:07:05 +0900] Sync Log:  [BGN] Updating file log/development.log from /host_sync to /app_sync
+[2020-06-09 18:07:05 +0900] Sync Log:  [END] Updating file log/development.log
+[2020-06-09 18:07:05 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:07:04.92 on 09 Jun 2020
+[2020-06-09 18:07:05 +0900] Sync Log:  Synchronization complete at 18:07:04  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:07:07 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:07:07.05 on 09 Jun 2020
+[2020-06-09 18:07:07 +0900] Sync Log:  [BGN] Updating file log/development.log from /host_sync to /app_sync
+[2020-06-09 18:07:07 +0900] Sync Log:  [END] Updating file log/development.log
+[2020-06-09 18:07:07 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:07:07.06 on 09 Jun 2020
+[2020-06-09 18:07:07 +0900] Sync Log:  Synchronization complete at 18:07:07  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:07:15 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:07:15.21 on 09 Jun 2020
+[2020-06-09 18:07:15 +0900] Sync Log:  [BGN] Updating file log/development.log from /host_sync to /app_sync
+[2020-06-09 18:07:16 +0900] Sync Log:  [END] Updating file log/development.log
+[2020-06-09 18:07:16 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:07:15.22 on 09 Jun 2020
+[2020-06-09 18:07:16 +0900] Sync Log:  Synchronization complete at 18:07:15  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:07:47 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:07:46.77 on 09 Jun 2020
+[2020-06-09 18:07:47 +0900] Sync Log:  [BGN] Copying tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 18:07:47 +0900] Sync Log:  [END] Copying tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 18:07:47 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:07:46.80 on 09 Jun 2020
+[2020-06-09 18:07:47 +0900] Sync Log:  Synchronization complete at 18:07:46  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:07:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:07:47.98 on 09 Jun 2020
+[2020-06-09 18:07:48 +0900] Sync Log:  [BGN] Copying tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 18:07:48 +0900] Sync Log:  [END] Copying tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 18:07:48 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:07:48 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:07:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:07:48.00 on 09 Jun 2020
+[2020-06-09 18:07:48 +0900] Sync Log:  Synchronization complete at 18:07:48  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:08:47 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:08:46.97 on 09 Jun 2020
+[2020-06-09 18:08:47 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 18:08:47 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 18:08:47 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:08:46.99 on 09 Jun 2020
+[2020-06-09 18:08:47 +0900] Sync Log:  Synchronization complete at 18:08:47  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:08:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:08:48.45 on 09 Jun 2020
+[2020-06-09 18:08:49 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 18:08:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 18:08:49 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:08:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:08:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:08:48.48 on 09 Jun 2020
+[2020-06-09 18:08:49 +0900] Sync Log:  Synchronization complete at 18:08:48  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:09:02 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:09:02.18 on 09 Jun 2020
+[2020-06-09 18:09:02 +0900] Sync Log:  [BGN] Updating file log/development.log from /host_sync to /app_sync
+[2020-06-09 18:09:03 +0900] Sync Log:  [END] Updating file log/development.log
+[2020-06-09 18:09:03 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:09:02.19 on 09 Jun 2020
+[2020-06-09 18:09:03 +0900] Sync Log:  Synchronization complete at 18:09:02  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:09:04 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:09:03.30 on 09 Jun 2020
+[2020-06-09 18:09:04 +0900] Sync Log:  [BGN] Updating file log/development.log from /host_sync to /app_sync
+[2020-06-09 18:09:04 +0900] Sync Log:  [END] Updating file log/development.log
+[2020-06-09 18:09:04 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:09:03.31 on 09 Jun 2020
+[2020-06-09 18:09:04 +0900] Sync Log:  Synchronization complete at 18:09:03  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:09:33 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:09:32.51 on 09 Jun 2020
+[2020-06-09 18:09:33 +0900] Sync Log:  [BGN] Updating file log/development.log from /host_sync to /app_sync
+[2020-06-09 18:09:33 +0900] Sync Log:  [END] Updating file log/development.log
+[2020-06-09 18:09:33 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:09:32.52 on 09 Jun 2020
+[2020-06-09 18:09:33 +0900] Sync Log:  Synchronization complete at 18:09:32  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:09:47 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:09:46.91 on 09 Jun 2020
+[2020-06-09 18:09:47 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 18:09:47 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 18:09:47 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:09:47 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:09:47 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:09:46.94 on 09 Jun 2020
+[2020-06-09 18:09:47 +0900] Sync Log:  Synchronization complete at 18:09:46  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:09:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:09:48.04 on 09 Jun 2020
+[2020-06-09 18:09:48 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 18:09:48 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 18:09:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:09:48.05 on 09 Jun 2020
+[2020-06-09 18:09:48 +0900] Sync Log:  Synchronization complete at 18:09:48  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:10:47 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:10:46.98 on 09 Jun 2020
+[2020-06-09 18:10:47 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 18:10:47 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 18:10:47 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:10:46.99 on 09 Jun 2020
+[2020-06-09 18:10:47 +0900] Sync Log:  Synchronization complete at 18:10:47  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:10:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:10:48.15 on 09 Jun 2020
+[2020-06-09 18:10:48 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 18:10:48 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 18:10:48 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:10:48 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:10:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:10:48.18 on 09 Jun 2020
+[2020-06-09 18:10:48 +0900] Sync Log:  Synchronization complete at 18:10:48  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:11:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:11:48.38 on 09 Jun 2020
+[2020-06-09 18:11:48 +0900] Sync Log:  [BGN] Updating file tmp/db/global/pg_control from /host_sync to /app_sync
+[2020-06-09 18:11:48 +0900] Sync Log:  [END] Updating file tmp/db/global/pg_control
+[2020-06-09 18:11:48 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 18:11:48 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 18:11:48 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 18:11:48 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 18:11:48 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:11:48 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:11:48 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_wal/000000010000000000000001 from /host_sync to /app_sync
+[2020-06-09 18:11:50 +0900] Sync Log:  [END] Updating file tmp/db/pg_wal/000000010000000000000001
+[2020-06-09 18:11:50 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:11:49.80 on 09 Jun 2020
+[2020-06-09 18:11:50 +0900] Sync Log:  Synchronization complete at 18:11:49  (5 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:11:53 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:11:52.87 on 09 Jun 2020
+[2020-06-09 18:11:53 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_wal/000000010000000000000001 from /host_sync to /app_sync
+[2020-06-09 18:11:53 +0900] Sync Log:  [END] Updating file tmp/db/pg_wal/000000010000000000000001
+[2020-06-09 18:11:53 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:11:53.22 on 09 Jun 2020
+[2020-06-09 18:11:53 +0900] Sync Log:  Synchronization complete at 18:11:53  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:12:47 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:12:47.17 on 09 Jun 2020
+[2020-06-09 18:12:47 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 18:12:47 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 18:12:47 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:12:47.18 on 09 Jun 2020
+[2020-06-09 18:12:47 +0900] Sync Log:  Synchronization complete at 18:12:47  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:12:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:12:48.30 on 09 Jun 2020
+[2020-06-09 18:12:48 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 18:12:48 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 18:12:48 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:12:48 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:12:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:12:48.33 on 09 Jun 2020
+[2020-06-09 18:12:48 +0900] Sync Log:  Synchronization complete at 18:12:48  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:13:47 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:13:47.24 on 09 Jun 2020
+[2020-06-09 18:13:47 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 18:13:47 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 18:13:47 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:13:47.26 on 09 Jun 2020
+[2020-06-09 18:13:47 +0900] Sync Log:  Synchronization complete at 18:13:47  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:13:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:13:48.42 on 09 Jun 2020
+[2020-06-09 18:13:48 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 18:13:48 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 18:13:48 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:13:48 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:13:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:13:48.45 on 09 Jun 2020
+[2020-06-09 18:13:48 +0900] Sync Log:  Synchronization complete at 18:13:48  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:14:23 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:14:23.20 on 09 Jun 2020
+[2020-06-09 18:14:23 +0900] Sync Log:  [BGN] Updating file log/development.log from /host_sync to /app_sync
+[2020-06-09 18:14:23 +0900] Sync Log:  [END] Updating file log/development.log
+[2020-06-09 18:14:23 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:14:23.21 on 09 Jun 2020
+[2020-06-09 18:14:23 +0900] Sync Log:  Synchronization complete at 18:14:23  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:14:24 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:14:24.32 on 09 Jun 2020
+[2020-06-09 18:14:24 +0900] Sync Log:  [BGN] Updating file log/development.log from /host_sync to /app_sync
+[2020-06-09 18:14:24 +0900] Sync Log:  [END] Updating file log/development.log
+[2020-06-09 18:14:24 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:14:24.33 on 09 Jun 2020
+[2020-06-09 18:14:24 +0900] Sync Log:  Synchronization complete at 18:14:24  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:14:31 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:14:31.35 on 09 Jun 2020
+[2020-06-09 18:14:31 +0900] Sync Log:  [BGN] Updating file log/development.log from /host_sync to /app_sync
+[2020-06-09 18:14:31 +0900] Sync Log:  [END] Updating file log/development.log
+[2020-06-09 18:14:31 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:14:31.36 on 09 Jun 2020
+[2020-06-09 18:14:31 +0900] Sync Log:  Synchronization complete at 18:14:31  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:14:33 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:14:33.49 on 09 Jun 2020
+[2020-06-09 18:14:33 +0900] Sync Log:  [BGN] Updating file log/development.log from /host_sync to /app_sync
+[2020-06-09 18:14:33 +0900] Sync Log:  [END] Updating file log/development.log
+[2020-06-09 18:14:33 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:14:33.50 on 09 Jun 2020
+[2020-06-09 18:14:33 +0900] Sync Log:  Synchronization complete at 18:14:33  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:14:47 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:14:47.31 on 09 Jun 2020
+[2020-06-09 18:14:47 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 18:14:47 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 18:14:47 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:14:47.32 on 09 Jun 2020
+[2020-06-09 18:14:47 +0900] Sync Log:  Synchronization complete at 18:14:47  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:14:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:14:48.43 on 09 Jun 2020
+[2020-06-09 18:14:48 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 18:14:48 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 18:14:48 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:14:48 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:14:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:14:48.46 on 09 Jun 2020
+[2020-06-09 18:14:48 +0900] Sync Log:  Synchronization complete at 18:14:48  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:15:02 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:15:02.77 on 09 Jun 2020
+[2020-06-09 18:15:02 +0900] Sync Log:  [BGN] Updating file log/development.log from /host_sync to /app_sync
+[2020-06-09 18:15:02 +0900] Sync Log:  [END] Updating file log/development.log
+[2020-06-09 18:15:02 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:15:02.78 on 09 Jun 2020
+[2020-06-09 18:15:02 +0900] Sync Log:  Synchronization complete at 18:15:02  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:15:47 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:15:47.39 on 09 Jun 2020
+[2020-06-09 18:15:47 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 18:15:47 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 18:15:47 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:15:47 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:15:47 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:15:47.42 on 09 Jun 2020
+[2020-06-09 18:15:47 +0900] Sync Log:  Synchronization complete at 18:15:47  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:15:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:15:48.53 on 09 Jun 2020
+[2020-06-09 18:15:48 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 18:15:48 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 18:15:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:15:48.54 on 09 Jun 2020
+[2020-06-09 18:15:48 +0900] Sync Log:  Synchronization complete at 18:15:48  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:16:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:16:47.47 on 09 Jun 2020
+[2020-06-09 18:16:48 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 18:16:48 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 18:16:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:16:47.48 on 09 Jun 2020
+[2020-06-09 18:16:48 +0900] Sync Log:  Synchronization complete at 18:16:47  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:16:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:16:48.61 on 09 Jun 2020
+[2020-06-09 18:16:49 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 18:16:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 18:16:49 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:16:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:16:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:16:48.63 on 09 Jun 2020
+[2020-06-09 18:16:49 +0900] Sync Log:  Synchronization complete at 18:16:48  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:17:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:17:47.58 on 09 Jun 2020
+[2020-06-09 18:17:48 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 18:17:48 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 18:17:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:17:47.59 on 09 Jun 2020
+[2020-06-09 18:17:48 +0900] Sync Log:  Synchronization complete at 18:17:47  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:17:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:17:48.71 on 09 Jun 2020
+[2020-06-09 18:17:49 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 18:17:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 18:17:49 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:17:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:17:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:17:48.73 on 09 Jun 2020
+[2020-06-09 18:17:49 +0900] Sync Log:  Synchronization complete at 18:17:48  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:18:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:18:47.70 on 09 Jun 2020
+[2020-06-09 18:18:48 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 18:18:48 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 18:18:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:18:47.72 on 09 Jun 2020
+[2020-06-09 18:18:48 +0900] Sync Log:  Synchronization complete at 18:18:47  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:18:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:18:48.88 on 09 Jun 2020
+[2020-06-09 18:18:49 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 18:18:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 18:18:49 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:18:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:18:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:18:48.92 on 09 Jun 2020
+[2020-06-09 18:18:49 +0900] Sync Log:  Synchronization complete at 18:18:48  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:19:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:19:47.72 on 09 Jun 2020
+[2020-06-09 18:19:48 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 18:19:48 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 18:19:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:19:47.73 on 09 Jun 2020
+[2020-06-09 18:19:48 +0900] Sync Log:  Synchronization complete at 18:19:47  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:19:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:19:48.84 on 09 Jun 2020
+[2020-06-09 18:19:49 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 18:19:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 18:19:49 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:19:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:19:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:19:48.85 on 09 Jun 2020
+[2020-06-09 18:19:49 +0900] Sync Log:  Synchronization complete at 18:19:48  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:20:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:20:47.89 on 09 Jun 2020
+[2020-06-09 18:20:48 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 18:20:48 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 18:20:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:20:47.90 on 09 Jun 2020
+[2020-06-09 18:20:48 +0900] Sync Log:  Synchronization complete at 18:20:47  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:20:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:20:49.23 on 09 Jun 2020
+[2020-06-09 18:20:49 +0900] Sync Log:  [BGN] Updating file log/development.log from /host_sync to /app_sync
+[2020-06-09 18:20:49 +0900] Sync Log:  [END] Updating file log/development.log
+[2020-06-09 18:20:49 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 18:20:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 18:20:49 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:20:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:20:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:20:49.26 on 09 Jun 2020
+[2020-06-09 18:20:49 +0900] Sync Log:  Synchronization complete at 18:20:49  (3 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:20:50 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:20:50.37 on 09 Jun 2020
+[2020-06-09 18:20:50 +0900] Sync Log:  [BGN] Updating file log/development.log from /host_sync to /app_sync
+[2020-06-09 18:20:50 +0900] Sync Log:  [END] Updating file log/development.log
+[2020-06-09 18:20:50 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:20:50.39 on 09 Jun 2020
+[2020-06-09 18:20:50 +0900] Sync Log:  Synchronization complete at 18:20:50  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:21:20 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:21:20.01 on 09 Jun 2020
+[2020-06-09 18:21:20 +0900] Sync Log:  [BGN] Updating file log/development.log from /host_sync to /app_sync
+[2020-06-09 18:21:20 +0900] Sync Log:  [END] Updating file log/development.log
+[2020-06-09 18:21:20 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:21:20.02 on 09 Jun 2020
+[2020-06-09 18:21:20 +0900] Sync Log:  Synchronization complete at 18:21:20  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:21:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:21:47.82 on 09 Jun 2020
+[2020-06-09 18:21:48 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 18:21:48 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 18:21:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:21:47.83 on 09 Jun 2020
+[2020-06-09 18:21:48 +0900] Sync Log:  Synchronization complete at 18:21:47  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:21:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:21:49.02 on 09 Jun 2020
+[2020-06-09 18:21:49 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 18:21:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 18:21:49 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:21:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:21:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:21:49.05 on 09 Jun 2020
+[2020-06-09 18:21:49 +0900] Sync Log:  Synchronization complete at 18:21:49  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:21:52 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:21:52.36 on 09 Jun 2020
+[2020-06-09 18:21:52 +0900] Sync Log:  [BGN] Deleting app/controllers/page_controller.rb from /app_sync
+[2020-06-09 18:21:52 +0900] Sync Log:  [END] Deleting app/controllers/page_controller.rb
+[2020-06-09 18:21:52 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:21:52.36 on 09 Jun 2020
+[2020-06-09 18:21:52 +0900] Sync Log:  Synchronization complete at 18:21:52  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:21:53 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:21:53.71 on 09 Jun 2020
+[2020-06-09 18:21:53 +0900] Sync Log:  [BGN] Deleting app/assets/javascripts/page.coffee from /app_sync
+[2020-06-09 18:21:53 +0900] Sync Log:  [END] Deleting app/assets/javascripts/page.coffee
+[2020-06-09 18:21:53 +0900] Sync Log:  [BGN] Deleting app/assets/stylesheets/page.scss from /app_sync
+[2020-06-09 18:21:53 +0900] Sync Log:  [END] Deleting app/assets/stylesheets/page.scss
+[2020-06-09 18:21:53 +0900] Sync Log:  [BGN] Deleting app/helpers/page_helper.rb from /app_sync
+[2020-06-09 18:21:53 +0900] Sync Log:  [END] Deleting app/helpers/page_helper.rb
+[2020-06-09 18:21:53 +0900] Sync Log:  [BGN] Deleting app/views/page from /app_sync
+[2020-06-09 18:21:53 +0900] Sync Log:  [END] Deleting app/views/page
+[2020-06-09 18:21:53 +0900] Sync Log:  [BGN] Deleting test/controllers/page_controller_test.rb from /app_sync
+[2020-06-09 18:21:53 +0900] Sync Log:  [END] Deleting test/controllers/page_controller_test.rb
+[2020-06-09 18:21:53 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:21:53.73 on 09 Jun 2020
+[2020-06-09 18:21:54 +0900] Sync Log:  Synchronization complete at 18:21:53  (5 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:22:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:22:19.27 on 09 Jun 2020
+[2020-06-09 18:22:19 +0900] Sync Log:  [BGN] Updating file config/routes.rb from /host_sync to /app_sync
+[2020-06-09 18:22:19 +0900] Sync Log:  [END] Updating file config/routes.rb
+[2020-06-09 18:22:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:22:19.28 on 09 Jun 2020
+[2020-06-09 18:22:19 +0900] Sync Log:  Synchronization complete at 18:22:19  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:22:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:22:49.24 on 09 Jun 2020
+[2020-06-09 18:22:49 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 18:22:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 18:22:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:22:49.27 on 09 Jun 2020
+[2020-06-09 18:22:49 +0900] Sync Log:  Synchronization complete at 18:22:49  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:22:50 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:22:50.55 on 09 Jun 2020
+[2020-06-09 18:22:50 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 18:22:50 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 18:22:50 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:22:50 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:22:50 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:22:50.59 on 09 Jun 2020
+[2020-06-09 18:22:50 +0900] Sync Log:  Synchronization complete at 18:22:50  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:23:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:23:49.07 on 09 Jun 2020
+[2020-06-09 18:23:49 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 18:23:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 18:23:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:23:49.08 on 09 Jun 2020
+[2020-06-09 18:23:49 +0900] Sync Log:  Synchronization complete at 18:23:49  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:23:50 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:23:50.20 on 09 Jun 2020
+[2020-06-09 18:23:50 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 18:23:50 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 18:23:50 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:23:50 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:23:50 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:23:50.22 on 09 Jun 2020
+[2020-06-09 18:23:50 +0900] Sync Log:  Synchronization complete at 18:23:50  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:24:47 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:24:47.09 on 09 Jun 2020
+[2020-06-09 18:24:48 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 18:24:48 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 18:24:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:24:47.11 on 09 Jun 2020
+[2020-06-09 18:24:48 +0900] Sync Log:  Synchronization complete at 18:24:47  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:24:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:24:48.28 on 09 Jun 2020
+[2020-06-09 18:24:49 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 18:24:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 18:24:49 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:24:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:24:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:24:48.30 on 09 Jun 2020
+[2020-06-09 18:24:49 +0900] Sync Log:  Synchronization complete at 18:24:48  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:25:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:25:48.40 on 09 Jun 2020
+[2020-06-09 18:25:49 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 18:25:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 18:25:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:25:48.43 on 09 Jun 2020
+[2020-06-09 18:25:49 +0900] Sync Log:  Synchronization complete at 18:25:48  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:25:50 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:25:49.63 on 09 Jun 2020
+[2020-06-09 18:25:50 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 18:25:50 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 18:25:50 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:25:50 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:25:50 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:25:49.67 on 09 Jun 2020
+[2020-06-09 18:25:50 +0900] Sync Log:  Synchronization complete at 18:25:49  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:26:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:26:48.30 on 09 Jun 2020
+[2020-06-09 18:26:49 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 18:26:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 18:26:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:26:48.31 on 09 Jun 2020
+[2020-06-09 18:26:49 +0900] Sync Log:  Synchronization complete at 18:26:48  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:26:50 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:26:49.44 on 09 Jun 2020
+[2020-06-09 18:26:50 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 18:26:50 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 18:26:50 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:26:50 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:26:50 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:26:49.46 on 09 Jun 2020
+[2020-06-09 18:26:50 +0900] Sync Log:  Synchronization complete at 18:26:49  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:27:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:27:48.34 on 09 Jun 2020
+[2020-06-09 18:27:49 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 18:27:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 18:27:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:27:48.37 on 09 Jun 2020
+[2020-06-09 18:27:49 +0900] Sync Log:  Synchronization complete at 18:27:48  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:27:50 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:27:49.53 on 09 Jun 2020
+[2020-06-09 18:27:50 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 18:27:50 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 18:27:50 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:27:50 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:27:50 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:27:49.57 on 09 Jun 2020
+[2020-06-09 18:27:50 +0900] Sync Log:  Synchronization complete at 18:27:49  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:28:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:28:48.45 on 09 Jun 2020
+[2020-06-09 18:28:49 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 18:28:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 18:28:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:28:48.46 on 09 Jun 2020
+[2020-06-09 18:28:49 +0900] Sync Log:  Synchronization complete at 18:28:48  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:28:50 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:28:49.60 on 09 Jun 2020
+[2020-06-09 18:28:50 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 18:28:50 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 18:28:50 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:28:50 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:28:50 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:28:49.64 on 09 Jun 2020
+[2020-06-09 18:28:50 +0900] Sync Log:  Synchronization complete at 18:28:49  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:29:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:29:48.59 on 09 Jun 2020
+[2020-06-09 18:29:49 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 18:29:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 18:29:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:29:48.60 on 09 Jun 2020
+[2020-06-09 18:29:49 +0900] Sync Log:  Synchronization complete at 18:29:48  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:29:50 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:29:49.74 on 09 Jun 2020
+[2020-06-09 18:29:50 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 18:29:50 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 18:29:50 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:29:50 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:29:50 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:29:49.76 on 09 Jun 2020
+[2020-06-09 18:29:50 +0900] Sync Log:  Synchronization complete at 18:29:49  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 18:30:48 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:30:48.62 on 09 Jun 2020
+[2020-06-09 18:30:48 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 18:30:49 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 18:30:49 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:30:48.63 on 09 Jun 2020
+[2020-06-09 18:30:49 +0900] Sync Log:  Synchronization complete at 18:30:48  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 18:30:50 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:30:49.77 on 09 Jun 2020
+[2020-06-09 18:30:50 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 18:30:50 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 18:30:50 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 18:30:50 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 18:30:50 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:30:49.79 on 09 Jun 2020
+[2020-06-09 18:30:50 +0900] Sync Log:  Synchronization complete at 18:30:49  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 20:31:47 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 18:31:48.41 on 09 Jun 2020
+[2020-06-09 20:31:47 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 20:31:47 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 20:31:47 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 20:31:47 +0900] Sync Log:  Failed: The source file /host_sync/tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 20:31:47 +0900] Sync Log:  has been modified during synchronization.  Transfer aborted.
+[2020-06-09 20:31:47 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 18:31:48.47 on 09 Jun 2020
+[2020-06-09 20:31:47 +0900] Sync Log:  Synchronization incomplete at 18:31:48  (1 item transferred, 0 skipped, 1 failed)
+[2020-06-09 20:31:47 +0900] Sync Log:    failed: tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 22:57:43 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 22:57:43.51 on 09 Jun 2020
+[2020-06-09 22:57:43 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 22:57:43 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 22:57:43 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 22:57:43 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 22:57:43 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 22:57:43.68 on 09 Jun 2020
+[2020-06-09 22:57:43 +0900] Sync Log:  Synchronization complete at 22:57:43  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 22:57:59 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 22:58:00.70 on 09 Jun 2020
+[2020-06-09 22:57:59 +0900] Sync Log:  [BGN] Updating file .DS_Store from /host_sync to /app_sync
+[2020-06-09 22:57:59 +0900] Sync Log:  [END] Updating file .DS_Store
+[2020-06-09 22:57:59 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 22:58:00.72 on 09 Jun 2020
+[2020-06-09 22:57:59 +0900] Sync Log:  Synchronization complete at 22:58:00  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 22:58:05 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 22:58:06.89 on 09 Jun 2020
+[2020-06-09 22:58:05 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-09 22:58:06 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-09 22:58:06 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 22:58:06.97 on 09 Jun 2020
+[2020-06-09 22:58:06 +0900] Sync Log:  Synchronization complete at 22:58:07  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-09 22:58:07 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 22:58:08.26 on 09 Jun 2020
+[2020-06-09 22:58:07 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-09 22:58:07 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-09 22:58:07 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-09 22:58:07 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-09 22:58:07 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 22:58:08.28 on 09 Jun 2020
+[2020-06-09 22:58:07 +0900] Sync Log:  Synchronization complete at 22:58:08  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-09 22:58:36 +0900] Sync Log:  Error response from daemon: dial unix docker.raw.sock: connect: connection refused
+          ok  Starting native_osx for sync sync-volume
+          ok  sync-volume container still running, restarting unison in container
+unison: stopped
+unison: started
+     success  Sync container started
+     success  Showing unison logs from your sync container: sync-volume
+[2020-06-10 14:29:45 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 14:29:45 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 22:58:06.97 on 09 Jun 2020
+[2020-06-10 14:29:45 +0900] Sync Log:  Synchronization complete at 22:58:07  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 14:29:45 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 22:58:08.26 on 09 Jun 2020
+[2020-06-10 14:29:45 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 14:29:45 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 14:29:45 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 14:29:45 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 14:29:45 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 22:58:08.28 on 09 Jun 2020
+[2020-06-10 14:29:45 +0900] Sync Log:  Synchronization complete at 22:58:08  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 14:30:26 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:30:26.19 on 10 Jun 2020
+[2020-06-10 14:30:26 +0900] Sync Log:  [BGN] Updating file .docker-sync/daemon.log from /host_sync to /app_sync
+[2020-06-10 14:30:26 +0900] Sync Log:  [END] Updating file .docker-sync/daemon.log
+[2020-06-10 14:30:26 +0900] Sync Log:  [BGN] Updating file .docker-sync/daemon.pid from /host_sync to /app_sync
+[2020-06-10 14:30:26 +0900] Sync Log:  [END] Updating file .docker-sync/daemon.pid
+[2020-06-10 14:30:26 +0900] Sync Log:  [BGN] Updating file tmp/cache/bootsnap-load-path-cache from /host_sync to /app_sync
+[2020-06-10 14:30:26 +0900] Sync Log:  [END] Updating file tmp/cache/bootsnap-load-path-cache
+[2020-06-10 14:30:26 +0900] Sync Log:  [BGN] Updating file tmp/db/global/pg_control from /host_sync to /app_sync
+[2020-06-10 14:30:26 +0900] Sync Log:  [END] Updating file tmp/db/global/pg_control
+[2020-06-10 14:30:26 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 14:30:26 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 14:30:26 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_wal/000000010000000000000001 from /host_sync to /app_sync
+[2020-06-10 14:30:26 +0900] Sync Log:  [END] Updating file tmp/db/pg_wal/000000010000000000000001
+[2020-06-10 14:30:26 +0900] Sync Log:  [BGN] Updating file tmp/db/postmaster.pid from /host_sync to /app_sync
+[2020-06-10 14:30:26 +0900] Sync Log:  [END] Updating file tmp/db/postmaster.pid
+[2020-06-10 14:30:26 +0900] Sync Log:  [BGN] Deleting tmp/db/base/16385/pg_internal.init from /app_sync
+[2020-06-10 14:30:26 +0900] Sync Log:  [END] Deleting tmp/db/base/16385/pg_internal.init
+[2020-06-10 14:30:26 +0900] Sync Log:  [BGN] Deleting tmp/db/global/pg_internal.init from /app_sync
+[2020-06-10 14:30:26 +0900] Sync Log:  [END] Deleting tmp/db/global/pg_internal.init
+[2020-06-10 14:30:26 +0900] Sync Log:  [BGN] Deleting tmp/db/pg_stat_tmp/db_0.stat from /app_sync
+[2020-06-10 14:30:26 +0900] Sync Log:  [END] Deleting tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 14:30:26 +0900] Sync Log:  [BGN] Deleting tmp/db/pg_stat_tmp/db_16385.stat from /app_sync
+[2020-06-10 14:30:26 +0900] Sync Log:  [END] Deleting tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 14:30:26 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:30:26.72 on 10 Jun 2020
+[2020-06-10 14:30:26 +0900] Sync Log:  Synchronization complete at 14:30:26  (11 items transferred, 0 skipped, 0 failed)
+[2020-06-10 14:30:30 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:30:30.61 on 10 Jun 2020
+[2020-06-10 14:30:30 +0900] Sync Log:  [BGN] Copying tmp/db/global/pg_internal.init from /host_sync to /app_sync
+[2020-06-10 14:30:30 +0900] Sync Log:  [END] Copying tmp/db/global/pg_internal.init
+[2020-06-10 14:30:30 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:30:30.62 on 10 Jun 2020
+[2020-06-10 14:30:30 +0900] Sync Log:  Synchronization complete at 14:30:30  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 14:30:31 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:30:31.72 on 10 Jun 2020
+[2020-06-10 14:30:31 +0900] Sync Log:  [BGN] Updating file log/development.log from /host_sync to /app_sync
+[2020-06-10 14:30:31 +0900] Sync Log:  [END] Updating file log/development.log
+[2020-06-10 14:30:31 +0900] Sync Log:  [BGN] Copying tmp/db/base/16385/pg_internal.init from /host_sync to /app_sync
+[2020-06-10 14:30:31 +0900] Sync Log:  [END] Copying tmp/db/base/16385/pg_internal.init
+[2020-06-10 14:30:31 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:30:31.73 on 10 Jun 2020
+[2020-06-10 14:30:31 +0900] Sync Log:  Synchronization complete at 14:30:31  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 14:30:33 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:30:33.79 on 10 Jun 2020
+[2020-06-10 14:30:33 +0900] Sync Log:  [BGN] Updating file log/development.log from /host_sync to /app_sync
+[2020-06-10 14:30:33 +0900] Sync Log:  [END] Updating file log/development.log
+[2020-06-10 14:30:33 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:30:33.80 on 10 Jun 2020
+[2020-06-10 14:30:33 +0900] Sync Log:  Synchronization complete at 14:30:33  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 14:31:17 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:31:17.38 on 10 Jun 2020
+[2020-06-10 14:31:17 +0900] Sync Log:  [BGN] Copying tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 14:31:17 +0900] Sync Log:  [END] Copying tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 14:31:17 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:31:17.39 on 10 Jun 2020
+[2020-06-10 14:31:17 +0900] Sync Log:  Synchronization complete at 14:31:17  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 14:31:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:31:18.46 on 10 Jun 2020
+[2020-06-10 14:31:18 +0900] Sync Log:  [BGN] Copying tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 14:31:18 +0900] Sync Log:  [END] Copying tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 14:31:18 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 14:31:18 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 14:31:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:31:18.47 on 10 Jun 2020
+[2020-06-10 14:31:18 +0900] Sync Log:  Synchronization complete at 14:31:18  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 14:32:17 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:32:17.43 on 10 Jun 2020
+[2020-06-10 14:32:17 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 14:32:17 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 14:32:17 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:32:17.44 on 10 Jun 2020
+[2020-06-10 14:32:17 +0900] Sync Log:  Synchronization complete at 14:32:17  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 14:32:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:32:18.51 on 10 Jun 2020
+[2020-06-10 14:32:18 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 14:32:18 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 14:32:18 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 14:32:18 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 14:32:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:32:18.52 on 10 Jun 2020
+[2020-06-10 14:32:18 +0900] Sync Log:  Synchronization complete at 14:32:18  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 14:33:17 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:33:17.55 on 10 Jun 2020
+[2020-06-10 14:33:17 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 14:33:17 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 14:33:17 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:33:17.56 on 10 Jun 2020
+[2020-06-10 14:33:17 +0900] Sync Log:  Synchronization complete at 14:33:17  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 14:33:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:33:18.62 on 10 Jun 2020
+[2020-06-10 14:33:18 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 14:33:18 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 14:33:18 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 14:33:18 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 14:33:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:33:18.64 on 10 Jun 2020
+[2020-06-10 14:33:18 +0900] Sync Log:  Synchronization complete at 14:33:18  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 14:34:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:34:18.62 on 10 Jun 2020
+[2020-06-10 14:34:19 +0900] Sync Log:  [BGN] Updating file tmp/db/global/pg_control from /host_sync to /app_sync
+[2020-06-10 14:34:19 +0900] Sync Log:  [END] Updating file tmp/db/global/pg_control
+[2020-06-10 14:34:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 14:34:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 14:34:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 14:34:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 14:34:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 14:34:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 14:34:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_wal/000000010000000000000001 from /host_sync to /app_sync
+[2020-06-10 14:34:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_wal/000000010000000000000001
+[2020-06-10 14:34:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:34:18.99 on 10 Jun 2020
+[2020-06-10 14:34:20 +0900] Sync Log:  Synchronization complete at 14:34:19  (5 items transferred, 0 skipped, 0 failed)
+[2020-06-10 14:34:24 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:34:23.31 on 10 Jun 2020
+[2020-06-10 14:34:24 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_wal/000000010000000000000001 from /host_sync to /app_sync
+[2020-06-10 14:34:24 +0900] Sync Log:  [END] Updating file tmp/db/pg_wal/000000010000000000000001
+[2020-06-10 14:34:24 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:34:23.57 on 10 Jun 2020
+[2020-06-10 14:34:24 +0900] Sync Log:  Synchronization complete at 14:34:23  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 14:35:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:35:17.59 on 10 Jun 2020
+[2020-06-10 14:35:18 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 14:35:18 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 14:35:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:35:17.60 on 10 Jun 2020
+[2020-06-10 14:35:18 +0900] Sync Log:  Synchronization complete at 14:35:17  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 14:35:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:35:18.69 on 10 Jun 2020
+[2020-06-10 14:35:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 14:35:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 14:35:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 14:35:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 14:35:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:35:18.70 on 10 Jun 2020
+[2020-06-10 14:35:19 +0900] Sync Log:  Synchronization complete at 14:35:18  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 14:36:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:36:17.69 on 10 Jun 2020
+[2020-06-10 14:36:18 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 14:36:18 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 14:36:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:36:17.70 on 10 Jun 2020
+[2020-06-10 14:36:18 +0900] Sync Log:  Synchronization complete at 14:36:17  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 14:36:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:36:18.82 on 10 Jun 2020
+[2020-06-10 14:36:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 14:36:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 14:36:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 14:36:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 14:36:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:36:18.83 on 10 Jun 2020
+[2020-06-10 14:36:19 +0900] Sync Log:  Synchronization complete at 14:36:18  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 14:37:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:37:17.71 on 10 Jun 2020
+[2020-06-10 14:37:18 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 14:37:18 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 14:37:18 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 14:37:18 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 14:37:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:37:17.72 on 10 Jun 2020
+[2020-06-10 14:37:18 +0900] Sync Log:  Synchronization complete at 14:37:17  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 14:37:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:37:18.78 on 10 Jun 2020
+[2020-06-10 14:37:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 14:37:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 14:37:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:37:18.78 on 10 Jun 2020
+[2020-06-10 14:37:19 +0900] Sync Log:  Synchronization complete at 14:37:18  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 14:38:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:38:17.77 on 10 Jun 2020
+[2020-06-10 14:38:18 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 14:38:18 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 14:38:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:38:17.77 on 10 Jun 2020
+[2020-06-10 14:38:18 +0900] Sync Log:  Synchronization complete at 14:38:17  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 14:38:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:38:18.83 on 10 Jun 2020
+[2020-06-10 14:38:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 14:38:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 14:38:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 14:38:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 14:38:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:38:18.84 on 10 Jun 2020
+[2020-06-10 14:38:19 +0900] Sync Log:  Synchronization complete at 14:38:18  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 14:39:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:39:17.82 on 10 Jun 2020
+[2020-06-10 14:39:18 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 14:39:18 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 14:39:18 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 14:39:18 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 14:39:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:39:17.83 on 10 Jun 2020
+[2020-06-10 14:39:18 +0900] Sync Log:  Synchronization complete at 14:39:17  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 14:39:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:39:18.89 on 10 Jun 2020
+[2020-06-10 14:39:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 14:39:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 14:39:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:39:18.89 on 10 Jun 2020
+[2020-06-10 14:39:19 +0900] Sync Log:  Synchronization complete at 14:39:18  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 14:40:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:40:17.88 on 10 Jun 2020
+[2020-06-10 14:40:18 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 14:40:18 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 14:40:18 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 14:40:18 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 14:40:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:40:17.89 on 10 Jun 2020
+[2020-06-10 14:40:18 +0900] Sync Log:  Synchronization complete at 14:40:17  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 14:40:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:40:18.95 on 10 Jun 2020
+[2020-06-10 14:40:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 14:40:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 14:40:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:40:18.96 on 10 Jun 2020
+[2020-06-10 14:40:19 +0900] Sync Log:  Synchronization complete at 14:40:19  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 14:41:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:41:17.94 on 10 Jun 2020
+[2020-06-10 14:41:18 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 14:41:18 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 14:41:18 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 14:41:18 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 14:41:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:41:17.96 on 10 Jun 2020
+[2020-06-10 14:41:18 +0900] Sync Log:  Synchronization complete at 14:41:17  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 14:41:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:41:19.03 on 10 Jun 2020
+[2020-06-10 14:41:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 14:41:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 14:41:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:41:19.04 on 10 Jun 2020
+[2020-06-10 14:41:19 +0900] Sync Log:  Synchronization complete at 14:41:19  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 14:42:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:42:18.00 on 10 Jun 2020
+[2020-06-10 14:42:18 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 14:42:18 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 14:42:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:42:18.01 on 10 Jun 2020
+[2020-06-10 14:42:18 +0900] Sync Log:  Synchronization complete at 14:42:18  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 14:42:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:42:19.10 on 10 Jun 2020
+[2020-06-10 14:42:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 14:42:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 14:42:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 14:42:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 14:42:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:42:19.11 on 10 Jun 2020
+[2020-06-10 14:42:19 +0900] Sync Log:  Synchronization complete at 14:42:19  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 14:43:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:43:18.10 on 10 Jun 2020
+[2020-06-10 14:43:18 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 14:43:18 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 14:43:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:43:18.11 on 10 Jun 2020
+[2020-06-10 14:43:18 +0900] Sync Log:  Synchronization complete at 14:43:18  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 14:43:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:43:19.19 on 10 Jun 2020
+[2020-06-10 14:43:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 14:43:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 14:43:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 14:43:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 14:43:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:43:19.20 on 10 Jun 2020
+[2020-06-10 14:43:19 +0900] Sync Log:  Synchronization complete at 14:43:19  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 14:44:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:44:18.17 on 10 Jun 2020
+[2020-06-10 14:44:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 14:44:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 14:44:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:44:18.18 on 10 Jun 2020
+[2020-06-10 14:44:19 +0900] Sync Log:  Synchronization complete at 14:44:18  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 14:44:20 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:44:19.25 on 10 Jun 2020
+[2020-06-10 14:44:20 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 14:44:20 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 14:44:20 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 14:44:20 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 14:44:20 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:44:19.26 on 10 Jun 2020
+[2020-06-10 14:44:20 +0900] Sync Log:  Synchronization complete at 14:44:19  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 14:45:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:45:18.27 on 10 Jun 2020
+[2020-06-10 14:45:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 14:45:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 14:45:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:45:18.28 on 10 Jun 2020
+[2020-06-10 14:45:19 +0900] Sync Log:  Synchronization complete at 14:45:18  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 14:45:20 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:45:19.36 on 10 Jun 2020
+[2020-06-10 14:45:20 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 14:45:20 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 14:45:20 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 14:45:20 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 14:45:20 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:45:19.37 on 10 Jun 2020
+[2020-06-10 14:45:20 +0900] Sync Log:  Synchronization complete at 14:45:19  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 14:46:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:46:18.35 on 10 Jun 2020
+[2020-06-10 14:46:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 14:46:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 14:46:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:46:18.36 on 10 Jun 2020
+[2020-06-10 14:46:19 +0900] Sync Log:  Synchronization complete at 14:46:18  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 14:46:20 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:46:19.43 on 10 Jun 2020
+[2020-06-10 14:46:20 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 14:46:20 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 14:46:20 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 14:46:20 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 14:46:20 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:46:19.44 on 10 Jun 2020
+[2020-06-10 14:46:20 +0900] Sync Log:  Synchronization complete at 14:46:19  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 14:47:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:47:18.42 on 10 Jun 2020
+[2020-06-10 14:47:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 14:47:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 14:47:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:47:18.43 on 10 Jun 2020
+[2020-06-10 14:47:19 +0900] Sync Log:  Synchronization complete at 14:47:18  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 14:47:20 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:47:19.49 on 10 Jun 2020
+[2020-06-10 14:47:20 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 14:47:20 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 14:47:20 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 14:47:20 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 14:47:20 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:47:19.50 on 10 Jun 2020
+[2020-06-10 14:47:20 +0900] Sync Log:  Synchronization complete at 14:47:19  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 14:48:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:48:18.58 on 10 Jun 2020
+[2020-06-10 14:48:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 14:48:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 14:48:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 14:48:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 14:48:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:48:18.62 on 10 Jun 2020
+[2020-06-10 14:48:19 +0900] Sync Log:  Synchronization complete at 14:48:18  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 14:48:20 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:48:19.79 on 10 Jun 2020
+[2020-06-10 14:48:20 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 14:48:20 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 14:48:20 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:48:19.80 on 10 Jun 2020
+[2020-06-10 14:48:20 +0900] Sync Log:  Synchronization complete at 14:48:19  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 14:49:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:49:18.55 on 10 Jun 2020
+[2020-06-10 14:49:18 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 14:49:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 14:49:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:49:18.57 on 10 Jun 2020
+[2020-06-10 14:49:19 +0900] Sync Log:  Synchronization complete at 14:49:18  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 14:49:20 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:49:19.65 on 10 Jun 2020
+[2020-06-10 14:49:20 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 14:49:20 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 14:49:20 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 14:49:20 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 14:49:20 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:49:19.66 on 10 Jun 2020
+[2020-06-10 14:49:20 +0900] Sync Log:  Synchronization complete at 14:49:19  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 14:50:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:50:18.65 on 10 Jun 2020
+[2020-06-10 14:50:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 14:50:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 14:50:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:50:18.66 on 10 Jun 2020
+[2020-06-10 14:50:19 +0900] Sync Log:  Synchronization complete at 14:50:18  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 14:50:20 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:50:19.72 on 10 Jun 2020
+[2020-06-10 14:50:20 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 14:50:20 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 14:50:20 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 14:50:20 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 14:50:20 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:50:19.73 on 10 Jun 2020
+[2020-06-10 14:50:20 +0900] Sync Log:  Synchronization complete at 14:50:19  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 14:51:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:51:18.69 on 10 Jun 2020
+[2020-06-10 14:51:18 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 14:51:18 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 14:51:18 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:51:18.69 on 10 Jun 2020
+[2020-06-10 14:51:18 +0900] Sync Log:  Synchronization complete at 14:51:18  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 14:51:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 14:51:19.76 on 10 Jun 2020
+[2020-06-10 14:51:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 14:51:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 14:51:19 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 14:51:19 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 14:51:19 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 14:51:19.77 on 10 Jun 2020
+[2020-06-10 14:51:20 +0900] Sync Log:  Synchronization complete at 14:51:19  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 15:49:24 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 15:49:22.96 on 10 Jun 2020
+[2020-06-10 15:49:24 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 15:49:24 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 15:49:24 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 15:49:22.97 on 10 Jun 2020
+[2020-06-10 15:49:24 +0900] Sync Log:  Synchronization complete at 15:49:23  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 15:49:25 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 15:49:24.14 on 10 Jun 2020
+[2020-06-10 15:49:25 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 15:49:25 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 15:49:25 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 15:49:25 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 15:49:25 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 15:49:24.21 on 10 Jun 2020
+[2020-06-10 15:49:25 +0900] Sync Log:  Synchronization complete at 15:49:24  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 15:50:26 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 15:50:25.61 on 10 Jun 2020
+[2020-06-10 15:50:26 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 15:50:26 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 15:50:26 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 15:50:25.61 on 10 Jun 2020
+[2020-06-10 15:50:26 +0900] Sync Log:  Synchronization complete at 15:50:25  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 15:50:27 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 15:50:26.69 on 10 Jun 2020
+[2020-06-10 15:50:27 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 15:50:27 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 15:50:27 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 15:50:27 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 15:50:27 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 15:50:26.71 on 10 Jun 2020
+[2020-06-10 15:50:27 +0900] Sync Log:  Synchronization complete at 15:50:26  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 15:51:26 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 15:51:25.73 on 10 Jun 2020
+[2020-06-10 15:51:26 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 15:51:26 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 15:51:26 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 15:51:25.74 on 10 Jun 2020
+[2020-06-10 15:51:26 +0900] Sync Log:  Synchronization complete at 15:51:25  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 15:51:27 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 15:51:26.93 on 10 Jun 2020
+[2020-06-10 15:51:27 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 15:51:27 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 15:51:27 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 15:51:27 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 15:51:27 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 15:51:26.97 on 10 Jun 2020
+[2020-06-10 15:51:27 +0900] Sync Log:  Synchronization complete at 15:51:27  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 15:52:26 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 15:52:25.74 on 10 Jun 2020
+[2020-06-10 15:52:26 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_0.stat from /host_sync to /app_sync
+[2020-06-10 15:52:26 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_0.stat
+[2020-06-10 15:52:26 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 15:52:25.75 on 10 Jun 2020
+[2020-06-10 15:52:26 +0900] Sync Log:  Synchronization complete at 15:52:25  (1 item transferred, 0 skipped, 0 failed)
+[2020-06-10 15:52:27 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 15:52:26.82 on 10 Jun 2020
+[2020-06-10 15:52:27 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/db_16385.stat from /host_sync to /app_sync
+[2020-06-10 15:52:27 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/db_16385.stat
+[2020-06-10 15:52:27 +0900] Sync Log:  [BGN] Updating file tmp/db/pg_stat_tmp/global.stat from /host_sync to /app_sync
+[2020-06-10 15:52:27 +0900] Sync Log:  [END] Updating file tmp/db/pg_stat_tmp/global.stat
+[2020-06-10 15:52:27 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 15:52:26.84 on 10 Jun 2020
+[2020-06-10 15:52:27 +0900] Sync Log:  Synchronization complete at 15:52:26  (2 items transferred, 0 skipped, 0 failed)
+[2020-06-10 15:52:54 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) started propagating changes at 15:52:53.83 on 10 Jun 2020
+[2020-06-10 15:52:54 +0900] Sync Log:  [BGN] Copying .git/COMMIT_EDITMSG from /host_sync to /app_sync
+[2020-06-10 15:52:54 +0900] Sync Log:  [END] Copying .git/COMMIT_EDITMSG
+[2020-06-10 15:52:54 +0900] Sync Log:  UNISON 2.51.2 (OCAML 4.06.1) finished propagating changes at 15:52:53.83 on 10 Jun 2020
+[2020-06-10 15:52:54 +0900] Sync Log:  Synchronization complete at 15:52:53  (1 item transferred, 0 skipped, 0 failed)
