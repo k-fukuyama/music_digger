@@ -14,9 +14,8 @@ services:
   db:
     image: postgres
     volumes:
-      - ./tmp/db:/var/lib/postgresql/data
+      - /tmp/postgresql-data:/var/lib/postgresql/data:z
     environment:
       POSTGRES_USER: 'admin'
       POSTGRES_PASSWORD: 'admin-pass'
-    restart: always  
-
+    restart: always
