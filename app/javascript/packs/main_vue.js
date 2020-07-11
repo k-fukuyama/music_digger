@@ -5,17 +5,19 @@
 // like app/views/layouts/application.html.erb.
 // All it does is render <div>Hello Vue</div> at the bottom of the page.
 
-import Vue from 'vue'
-import App from '../app.vue'
+import Vue from 'vue/dist/vue.esm'
+import router from './routes.js';
+import ArtisIndex from './components/artists/artists_index.vue'
 
 document.addEventListener('DOMContentLoaded', () => {
-  const app = new Vue({
-    render: h => h(App)
-  }).$mount()
-  document.body.appendChild(app.$el)
-
-  console.log(app)
-})
+  const index = new Vue({
+    el: '#index',
+    router,
+    components: {
+      'artist': ArtisIndex,
+    }
+  })
+});
 
 
 // The above code uses Vue without the compiler, which means you cannot
