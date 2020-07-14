@@ -8,6 +8,7 @@
 import Vue from 'vue/dist/vue.esm'
 import router from './routes.js';
 import ArtisIndex from './components/artists/artists_index.vue'
+import ArtistNew from './components/artists/artists_new.vue'
 
 document.addEventListener('DOMContentLoaded', () => {
   const index = new Vue({
@@ -16,7 +17,16 @@ document.addEventListener('DOMContentLoaded', () => {
     components: {
       'artist': ArtisIndex,
     }
+  });
+
+  new Vue({
+    el: '#new',
+    router,
+    components: {
+      'new-form': ArtistNew
+    }
   })
+
 });
 
 
