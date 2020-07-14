@@ -14,4 +14,10 @@ class Api::V1::ArtistsController < ApplicationController
       render json: artist, status: 500
     end
   end
+
+  private
+
+  def artist_params
+     params.require(:artist).permit(:name, :birth, :gender, :country)
+  end
 end
