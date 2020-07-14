@@ -7,7 +7,8 @@
     "vue": "^2.6.11",
     "vue-loader": "^15.9.2",
     "vue-router": "^3.3.4",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "vuejs-datepicker": "^1.6.2"
   },
   "devDependencies": {
     "webpack-dev-server": "^3.11.0"
