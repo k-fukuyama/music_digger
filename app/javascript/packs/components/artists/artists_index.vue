@@ -1,22 +1,33 @@
 <template>
-  <div id="app">
-    <table>
-      <tbody>
-        <tr>
-          <th>ID</th>
-          <th>name</th>
-          <th>department</th>
-          <th>gender</th>
-        </tr>
-        <tr v-for="artist in artists" :key="artist.id">
-          <td>{{ artist.id }}</td>
-          <td>{{ artist.name }}</td>
-          <td>{{ artist.department }}</td>
-          <td>{{ artist.gender }}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+  <v-app>
+    <div>
+      <v-container fluid>
+        <v-layout wrap>
+          <v-flex xs12 md12>
+          <v-app-bar color="deep-purple accent-4" dark>
+            <v-toolbar-title>Artists</v-toolbar-title>
+          </v-app-bar>
+          </v-flex>
+        </v-layout>
+
+        <v-simple-table>
+          <template v-slot:default>
+            <thead>
+              <tr>
+                <th class="text-left">Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="artist in artists" :key="artist.name">
+                <td>{{ artist.name }}</td>
+                <td>{{ artist.gender }}</td>
+              </tr>
+            </tbody>
+          </template>
+        </v-simple-table>
+      </v-container>
+    </div>
+  </v-app>
 </template>
 
 <script>
