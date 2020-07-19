@@ -1,6 +1,11 @@
 class Api::V1::ArtistsController < ApplicationController
   def index
-    artists = Artist.all
+  artists = if params[:search_params].present?
+      Artist.where('name like ?', "%#{params[:search_params]}%")
+    else
+      artists = Artist.all
+    end
+
     render json: artists
   end
 
