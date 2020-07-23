@@ -5,15 +5,21 @@
 // like app/views/layouts/application.html.erb.
 // All it does is render <div>Hello Vue</div> at the bottom of the page.
 
-import Vue from 'vue/dist/vue.esm'
+import Vuetify from "vuetify";
+import "vuetify/dist/vuetify.min.css";
+import '@mdi/font/css/materialdesignicons.css';
+import Vue from 'vue/dist/vue.esm';
 import router from './routes.js';
 import ArtisIndex from './components/artists/artists_index.vue'
 import ArtistNew from './components/artists/artists_new.vue'
+
+Vue.use(Vuetify)
 
 document.addEventListener('DOMContentLoaded', () => {
   const index = new Vue({
     el: '#index',
     router,
+    vuetify: new Vuetify(),
     components: {
       'artist': ArtisIndex,
     }
