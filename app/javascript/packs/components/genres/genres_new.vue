@@ -94,15 +94,13 @@
       if (!this.genre.name) return;
 
         axios.post('/api/v1/genres', { genre: this.genre }).then((res) => {
+        console.log(res.status)
           if (res.status == 200) {
             this.dialog = true
-          }else{
-            this.faildDialog = true
           }
         }, (error) => {
-          console.log(error);
+          this.faildDialog = true
         });
-
       }
     }
   }
