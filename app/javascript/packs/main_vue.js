@@ -12,6 +12,7 @@ import Vue from 'vue/dist/vue.esm';
 import router from './routes.js';
 import ArtisIndex from './components/artists/artists_index.vue'
 import ArtistNew from './components/artists/artists_new.vue'
+import GenresNew from './components/genres/genres_new.vue'
 
 Vue.use(Vuetify)
 
@@ -31,6 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
     components: {
       'new-form': ArtistNew
     }
+  })
+
+  new Vue({
+    el: '#genres_new',
+    router,
+    vuetify: new Vuetify()
   })
 
 });
