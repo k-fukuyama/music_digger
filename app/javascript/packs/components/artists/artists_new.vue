@@ -1,25 +1,20 @@
 <template>
-  <div class="container">
-    <form class="col" @submit.prevent="createArtist">
-      <div class="row">
-        <div class="input-field">
-          <input placeholder="アーティスト名" type="text" class="validate" v-model="artist.name" required="required"></br>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field">
-          <input placeholder="性別" type="text" class="validate" v-model="artist.gender" required="required">
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field">
-          <input placeholder="国" type="text" class="validate" v-model="artist.country" required="required">
-        </div>
-      </div>
-      <vuejs-datepicker v-model="artist.birth"></vuejs-datepicker>
-      <input type="submit" value="アーティストを登録" class="btn btn-primary">
-    </form>
-  </div>
+  <v-app>
+    <v-form v-model="valid" @submit.prevent="createArtist">
+      <v-container>
+        <v-row align="center">
+          <v-col cols="12" sm="6">
+            <v-text-field
+              label="アーティスト名"
+              single-line
+              v-model="artist.name"
+            ></v-text-field>
+          </v-col>
+        </v-row>
+        <v-btn large color="primary" @click="createArtist">登録</v-btn>
+      </v-container>
+    </v-form>
+  </v-app>
 </template>
 
 <script>
