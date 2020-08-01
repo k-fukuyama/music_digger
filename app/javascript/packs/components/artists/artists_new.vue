@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-form v-model="valid" @submit.prevent="createArtist">
+    <v-form @submit.prevent="createArtist">
       <v-container>
         <v-row align="center">
           <v-col cols="12" sm="6">
