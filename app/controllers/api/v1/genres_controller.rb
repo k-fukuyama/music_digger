@@ -1,4 +1,9 @@
 class Api::V1::GenresController < ApplicationController
+  def index
+    genres = Genre.all
+    render json: genres
+  end
+
   def create
     genre = Genre.new(name: genre_params[:name])
 
