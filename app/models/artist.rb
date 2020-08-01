@@ -14,4 +14,12 @@ class Artist < ApplicationRecord
     self.birth_month = birth_to_date.month
     self.birth_day = birth_to_date.day
   end
+
+  def create_artist_genre(genre_ids)
+    return true unless genre_ids.present?
+
+    genre_ids.each do |genre_id|
+      ArtistGenre.create(artist_id: self.id, genre_id: genre_id)
+    end
+  end
 end
