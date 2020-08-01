@@ -5,6 +5,8 @@ class Artist < ApplicationRecord
   has_many :artist_genres, dependent: :destroy
   has_many :genres, through: :artist_genres
 
+  enum gender: { 男性: 0, 女性: 1, その他: 2 }
+
   def set_birth_day(birth)
     birth_to_date = birth.to_date
 
