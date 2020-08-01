@@ -1,30 +1,99 @@
 <template>
-  <div class="container">
-    <form class="col" @submit.prevent="createArtist">
-      <div class="row">
-        <div class="input-field">
-          <input placeholder="アーティスト名" type="text" class="validate" v-model="artist.name" required="required"></br>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field">
-          <input placeholder="性別" type="text" class="validate" v-model="artist.gender" required="required">
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field">
-          <input placeholder="国" type="text" class="validate" v-model="artist.country" required="required">
-        </div>
-      </div>
-      <vuejs-datepicker v-model="artist.birth"></vuejs-datepicker>
-      <input type="submit" value="アーティストを登録" class="btn btn-primary">
-    </form>
-  </div>
+  <v-app>
+    <v-form @submit.prevent="createArtist">
+      <v-container>
+        <v-row align="center">
+          <v-col cols="12" sm="6">
+            <v-text-field
+              label="アーティスト名"
+              :rules="nameRules"
+              single-line
+              v-model="artist.name"
+            ></v-text-field>
+          </v-col>
+        </v-row>
+
+        <v-row align="center">
+          <v-col cols="12" sm="6">
+            <v-text-field
+              label="生年月日"
+              single-line
+              @click.stop="dialog = true"
+              v-model="artist.birth"
+            ></v-text-field>
+          </v-col>
+        </v-row>
+
+        <v-row align="center">
+          <v-col cols="12" sm="6">
+            <v-select
+            :items="genders"
+            :rules="genderRules"
+            label="性別"
+            dense
+            v-model="artist.gender"
+            ></v-select>
+          </v-col>
+        </v-row>
+
+        <v-row align="center">
+          <v-col cols="12" sm="6">
+            <v-text-field
+              label="国"
+              single-line
+              v-model="artist.country"
+            ></v-text-field>
+          </v-col>
+        </v-row>
+
+        <v-row align="center">
+          <v-radio-group v-model="selectedGenre" row>
+            <v-checkbox
+              v-for="genre in genres"
+              v-model="selectedGenre"
+              :key="genre.name"
+              :label="genre.name"
+              :value="genre.id"
+              class="mx-2"
+            ></v-checkbox>
+          </v-radio-group>
+        </v-row>
+
+        <v-btn large color="primary" @click="createArtist">登録</v-btn>
+      </v-container>
+    </v-form>
+
+    <v-row justify="center">
+        <v-dialog
+          v-model="dialog"
+          max-width="350"
+        >
+          <v-card>
+            <v-card-title class="headline">生年月日を選択</v-card-title>
+
+            <v-card-text>
+              <v-date-picker v-model="picker"></v-date-picker>
+            </v-card-text>
+
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              <v-btn
+                color="green darken-1"
+                text
+                v-on:click="birth_day_picker"
+                @click="dialog = false"
+              >
+                登録
+              </v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-dialog>
+      </v-row>
+  </v-app>
 </template>
 
 <script>
   import axios from 'axios';
-  import Datepicker from 'vuejs-datepicker';
 
   const token = document.getElementsByName("csrf-token")[0].getAttribute("content");
   axios.defaults.headers.common["X-CSRF-Token"] = token;
@@ -39,31 +108,36 @@
           birth: ''
         },
 
-        selected: null,
-        list: [],
-        num: 100
+        picker: new Date().toISOString().substr(0, 10),
+        dialog: false,
+
+        genders: ["男性", "女性", "その他"],
+
+        genres: [],
+        selectedGenre: [],
+
+        nameRules: [
+          v => !!v || 'アーティスト名を入力してください',
+          v => v.length <= 20 || 'Name must be less than 10 characters',
+        ],
+
+        genderRules: [
+          v => !!v || '性別を選択してください'
+        ]
       }
     },
 
-    components :{
-      'vuejs-datepicker': Datepicker
-    },
-
-    created() {
-      const year = new Date().getFullYear()
-
-      for (let i = 0; i < this.num; i++) {
-        this.list.unshift(year - i)
-      }
-
-      this.selected = this.list[this.list.length * 0.6]
+    mounted () {
+      axios
+        .get('/api/v1/genres.json')
+        .then(response => (this.genres = response.data))
     },
 
     methods: {
       createArtist: function () {
         if (!this.artist.name || !this.artist.gender) return;
 
-        axios.post('/api/v1/artists', { artist: this.artist }).then((res) => {
+        axios.post('/api/v1/artists', { artist: this.artist, genre_ids: this.selectedGenre }).then((res) => {
           if (res.status == 200) {
             this.$router.push("/artists/index").catch(()=>{});
           }else{
@@ -72,8 +146,10 @@
         }, (error) => {
           console.log(error);
         });
-        this.$router.push("/artists/index")
+      },
 
+      birth_day_picker: function () {
+        this.artist.birth = this.picker
       }
     }
   }

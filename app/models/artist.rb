@@ -5,9 +5,21 @@ class Artist < ApplicationRecord
   has_many :artist_genres, dependent: :destroy
   has_many :genres, through: :artist_genres
 
+  enum gender: { 男性: 0, 女性: 1, その他: 2 }
+
   def set_birth_day(birth)
-    self.birth_year = birth.year
-    self.birth_month = birth.month
-    self.birth_day = birth.day
+    birth_to_date = birth.to_date
+
+    self.birth_year = birth_to_date.year
+    self.birth_month = birth_to_date.month
+    self.birth_day = birth_to_date.day
+  end
+
+  def create_artist_genre(genre_ids)
+    return true unless genre_ids.present?
+
+    genre_ids.each do |genre_id|
+      ArtistGenre.create(artist_id: self.id, genre_id: genre_id)
+    end
   end
 end

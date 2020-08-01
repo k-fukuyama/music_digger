@@ -10,13 +10,17 @@ class Api::V1::ArtistsController < ApplicationController
   end
 
   def create
-    artist = Artist.new(name: artist_params[:name], gender: artist_params[:gender], country: artist_params[:country])
-    artist.set_birth_day(artist_params[:birth].to_date)
+    birth_day = artist_params[:birth]
 
-    if artist.save
+    ActiveRecord::Base.transaction(requires_new: true) do
+      artist = Artist.new(name: artist_params[:name], gender: artist_params[:gender], country: artist_params[:country], country: artist_params[:country])
+      artist.set_birth_day(birth_day.to_date) if birth_day.present?
+
+      raise ActiveRecord::Rollback unless artist.save && artist.create_artist_genre(params[:genre_ids])
+
       render json: artist, status: 200
-    else
-      render json: artist, status: 500
+    rescue ActiveRecord::Rollback
+      render json: e.message, status: 500
     end
   end
 

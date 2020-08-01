@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   new Vue({
     el: '#new',
     router,
+    vuetify: new Vuetify(),
     components: {
       'new-form': ArtistNew
     }
