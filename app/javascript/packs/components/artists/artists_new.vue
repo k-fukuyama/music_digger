@@ -35,6 +35,16 @@
         </v-row>
 
         <v-row align="center">
+          <v-col cols="12" sm="6">
+            <v-text-field
+              label="国"
+              single-line
+              v-model="artist.country"
+            ></v-text-field>
+          </v-col>
+        </v-row>
+
+        <v-row align="center">
           <v-radio-group v-model="selectedGenre" row>
             <v-checkbox
               v-for="genre in genres"
