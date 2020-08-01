@@ -11,9 +11,47 @@
             ></v-text-field>
           </v-col>
         </v-row>
+
+        <v-row align="center">
+          <v-col cols="12" sm="6">
+            <v-text-field
+              label="生年月日"
+              single-line
+              @click.stop="dialog = true"
+              v-model="artist.birth"
+            ></v-text-field>
+          </v-col>
+        </v-row>
         <v-btn large color="primary" @click="createArtist">登録</v-btn>
       </v-container>
     </v-form>
+
+    <v-row justify="center">
+        <v-dialog
+          v-model="dialog"
+          max-width="350"
+        >
+          <v-card>
+            <v-card-title class="headline">生年月日を選択</v-card-title>
+
+            <v-card-text>
+              <v-date-picker v-model="picker"></v-date-picker>
+            </v-card-text>
+
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              <v-btn
+                color="green darken-1"
+                text
+                v-on:click="birth_day_picker"
+                @click="dialog = false"
+              >
+                登録
+              </v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-dialog>
+      </v-row>
   </v-app>
 </template>
 
@@ -36,7 +74,10 @@
 
         selected: null,
         list: [],
-        num: 100
+        num: 100,
+
+        picker: new Date().toISOString().substr(0, 10),
+        dialog: false,
       }
     },
 
@@ -69,6 +110,10 @@
         });
         this.$router.push("/artists/index")
 
+      },
+
+      birth_day_picker: function () {
+        this.artist.birth = this.picker
       }
     }
   }
