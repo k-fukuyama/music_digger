@@ -22,6 +22,18 @@
             ></v-text-field>
           </v-col>
         </v-row>
+
+        <v-row align="center">
+          <v-col cols="12" sm="6">
+            <v-select
+            :items="genders"
+            label="性別"
+            dense
+            v-model="artist.gender"
+            ></v-select>
+          </v-col>
+        </v-row>
+
         <v-btn large color="primary" @click="createArtist">登録</v-btn>
       </v-container>
     </v-form>
@@ -72,7 +84,9 @@
         },
 
         picker: new Date().toISOString().substr(0, 10),
-        dialog: false
+        dialog: false,
+
+        genders: ["男性", "女性", "その他"]
       }
     },
 
