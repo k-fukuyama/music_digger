@@ -126,7 +126,7 @@
       createArtist: function () {
         if (!this.artist.name || !this.artist.gender) return;
 
-        axios.post('/api/v1/artists', { artist: this.artist }).then((res) => {
+        axios.post('/api/v1/artists', { artist: this.artist, genre_ids: this.selectedGenre }).then((res) => {
           if (res.status == 200) {
             this.$router.push("/artists/index").catch(()=>{});
           }else{
@@ -135,8 +135,6 @@
         }, (error) => {
           console.log(error);
         });
-        this.$router.push("/artists/index")
-
       },
 
       birth_day_picker: function () {
