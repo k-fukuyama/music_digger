@@ -6,6 +6,7 @@
           <v-col cols="12" sm="6">
             <v-text-field
               label="アーティスト名"
+              :rules="nameRules"
               single-line
               v-model="artist.name"
             ></v-text-field>
@@ -27,6 +28,7 @@
           <v-col cols="12" sm="6">
             <v-select
             :items="genders"
+            :rules="genderRules"
             label="性別"
             dense
             v-model="artist.gender"
@@ -112,7 +114,16 @@
         genders: ["男性", "女性", "その他"],
 
         genres: [],
-        selectedGenre: []
+        selectedGenre: [],
+
+        nameRules: [
+          v => !!v || 'アーティスト名を入力してください',
+          v => v.length <= 20 || 'Name must be less than 10 characters',
+        ],
+
+        genderRules: [
+          v => !!v || '性別を選択してください'
+        ]
       }
     },
 
