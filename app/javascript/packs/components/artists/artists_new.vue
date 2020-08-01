@@ -57,7 +57,6 @@
 
 <script>
   import axios from 'axios';
-  import Datepicker from 'vuejs-datepicker';
 
   const token = document.getElementsByName("csrf-token")[0].getAttribute("content");
   axios.defaults.headers.common["X-CSRF-Token"] = token;
@@ -72,27 +71,9 @@
           birth: ''
         },
 
-        selected: null,
-        list: [],
-        num: 100,
-
         picker: new Date().toISOString().substr(0, 10),
-        dialog: false,
+        dialog: false
       }
-    },
-
-    components :{
-      'vuejs-datepicker': Datepicker
-    },
-
-    created() {
-      const year = new Date().getFullYear()
-
-      for (let i = 0; i < this.num; i++) {
-        this.list.unshift(year - i)
-      }
-
-      this.selected = this.list[this.list.length * 0.6]
     },
 
     methods: {
