@@ -34,6 +34,19 @@
           </v-col>
         </v-row>
 
+        <v-row align="center">
+          <v-radio-group v-model="selectedGenre" row>
+            <v-checkbox
+              v-for="genre in genres"
+              v-model="selectedGenre"
+              :key="genre.name"
+              :label="genre.name"
+              :value="genre.id"
+              class="mx-2"
+            ></v-checkbox>
+          </v-radio-group>
+        </v-row>
+
         <v-btn large color="primary" @click="createArtist">登録</v-btn>
       </v-container>
     </v-form>
@@ -86,8 +99,17 @@
         picker: new Date().toISOString().substr(0, 10),
         dialog: false,
 
-        genders: ["男性", "女性", "その他"]
+        genders: ["男性", "女性", "その他"],
+
+        genres: [],
+        selectedGenre: []
       }
+    },
+
+    mounted () {
+      axios
+        .get('/api/v1/genres.json')
+        .then(response => (this.genres = response.data))
     },
 
     methods: {
