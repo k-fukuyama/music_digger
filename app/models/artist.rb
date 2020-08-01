@@ -6,8 +6,10 @@ class Artist < ApplicationRecord
   has_many :genres, through: :artist_genres
 
   def set_birth_day(birth)
-    self.birth_year = birth.year
-    self.birth_month = birth.month
-    self.birth_day = birth.day
+    birth_to_date = birth.to_date
+
+    self.birth_year = birth_to_date.year
+    self.birth_month = birth_to_date.month
+    self.birth_day = birth_to_date.day
   end
 end
