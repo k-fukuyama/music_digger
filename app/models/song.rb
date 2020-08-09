@@ -1,4 +1,6 @@
 class Song < ApplicationRecord
+  belongs_to :discography
+  
   def set_song_params(song_info, artist_ids_of_hash = nil)
     artist_ids_of_hash = fetch_some_artist_ids_of_hash(song_info) unless artist_ids_of_hash.present?
     song_min = song_info[:min]
