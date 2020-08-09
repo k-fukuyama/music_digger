@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(version: 2020_08_01_051207) do
     t.string "title", null: false
     t.time "play_length", null: false
     t.integer "discography_id", null: false
+    t.integer "track_number", null: false
     t.integer "producer_id"
     t.integer "lyricist_id"
     t.integer "composer_id"
