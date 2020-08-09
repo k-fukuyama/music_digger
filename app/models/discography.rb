@@ -1,4 +1,6 @@
 class Discography < ApplicationRecord
+  has_many :songs
+
   def set_play_length(songs)
     min = 0
     sec = 0
