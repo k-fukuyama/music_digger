@@ -1,6 +1,8 @@
 class Song < ApplicationRecord
   def set_song_params(song_info, artist_ids_of_hash = nil)
     artist_ids_of_hash = fetch_some_artist_ids_of_hash(song_info) unless artist_ids_of_hash.present?
+    song_min = song_info[:min]
+    song_sec = song_info[:sec]
 
     self.assign_attributes(
       {
@@ -11,7 +13,9 @@ class Song < ApplicationRecord
         lyricist_id: artist_ids_of_hash[:lyricist_id],
         bassist_id: artist_ids_of_hash[:bassist_id],
         guitarist_id: artist_ids_of_hash[:guitarist_id],
-        keyboardist_id: artist_ids_of_hash[:keyboardist_id]
+        keyboardist_id: artist_ids_of_hash[:keyboardist_id],
+        min: song_min.present? ? song_min : 0,
+        sec: song_sec.present? ? song_sec : 0
       }
     )
   end
