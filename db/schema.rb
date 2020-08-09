@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 2020_08_01_051207) do
     t.string "label"
     t.text "explanation"
     t.date "sales_start_at"
+    t.integer "artist_id", null: false
     t.integer "grammy_id"
     t.integer "genre_id"
     t.integer "chart"
@@ -62,6 +63,7 @@ ActiveRecord::Schema.define(version: 2020_08_01_051207) do
     t.integer "lyricist_id"
     t.integer "composer_id"
     t.integer "artist_id", null: false
+    t.integer "vocalist_id"
     t.integer "bassist_id"
     t.integer "guitarist_id"
     t.integer "drummer_id"
