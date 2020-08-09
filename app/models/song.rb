@@ -1,6 +1,5 @@
 class Song < ApplicationRecord
   belongs_to :discography
-  
   def set_song_params(song_info, artist_ids_of_hash = nil)
     artist_ids_of_hash = fetch_some_artist_ids_of_hash(song_info) unless artist_ids_of_hash.present?
     song_min = song_info[:min]
@@ -39,6 +38,8 @@ class Song < ApplicationRecord
     ids_of_hash = {}
     artists.each do |artist|
       ids_of_hash[:producer_id] = artist.id if song_info[:producer] == artist.name
+      ids_of_hash[:vocalist_id] = artist.id if song_info[:vocalist] == artist.name
+      ids_of_hash[:drummer_id] = artist.id if song_info[:drummer] == artist.name
       ids_of_hash[:composer_id] = artist.id if song_info[:composer] == artist.name
       ids_of_hash[:lyricist_id] = artist.id if song_info[:lyricist] == artist.name
       ids_of_hash[:bassist_id] = artist.id if song_info[:bassist] == artist.name
