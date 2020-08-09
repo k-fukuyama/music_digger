@@ -8,6 +8,7 @@ class CreateSongs < ActiveRecord::Migration[5.2]
       t.integer :lyricist_id
       t.integer :composer_id
       t.integer :artist_id, null: false
+      t.integer :vocalist_id
       t.integer :bassist_id
       t.integer :guitarist_id
       t.integer :drummer_id
