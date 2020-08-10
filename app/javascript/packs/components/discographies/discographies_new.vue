@@ -289,3 +289,40 @@
       </v-row>
   </v-app>
 </template>
+
+<script>
+  import axios from 'axios';
+
+  export default {
+    data: function() {
+      return {
+        discography: {
+          artist: '',
+          title: '',
+          sales_start_at: '',
+          label: '',
+          chart: '',
+          explanation: '',
+          discography_type: 0
+        },
+
+        songs: [
+          {
+            track_number:'',
+            title: '',
+            producer: '',
+            composer: '',
+            lyricist: '',
+            vocalist: '',
+            bassist: '',
+            guitarist: '',
+            drummer: '',
+            keyboardist: '',
+            min: '',
+            sec: ''
+          }
+        ]
+      }
+    }
+  }
+</script>
