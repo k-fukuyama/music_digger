@@ -360,6 +360,30 @@
 
       sales_start_at_picker: function () {
         this.discography.sales_start_at = this.picker
+      },
+
+      addForm() {
+        this.songs.push(
+          {
+            track_number:"",
+            title: "",
+            producer: "",
+            composer: "",
+            lyricist: "",
+            vocalist: "",
+            bassist: "",
+            guitarist: "",
+            drummer: "",
+            keyboardist: "",
+            min: '',
+            sec: ''
+          }
+        );
+      },
+
+      deleteForm(index) {
+        console.log(index + 1)
+        this.songs.splice(index, 1);
       }
     }
   }
