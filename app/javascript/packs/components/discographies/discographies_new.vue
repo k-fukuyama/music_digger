@@ -328,6 +328,12 @@
       }
     },
 
+    mounted () {
+      axios
+        .get('/api/v1/genres.json')
+        .then(response => (this.genres = response.data))
+    },
+
     methods: {
       createDiscography: function () {
 
