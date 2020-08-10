@@ -1,6 +1,8 @@
 class Discography < ApplicationRecord
   has_many :songs
 
+  enum type: { シングル: 0, アルバム: 1 }
+
   def set_play_length(songs)
     min = 0
     sec = 0
