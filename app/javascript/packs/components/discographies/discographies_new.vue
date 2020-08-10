@@ -324,7 +324,10 @@
             min: '',
             sec: ''
           }
-        ]
+        ],
+
+        picker: new Date().toISOString().substr(0, 10),
+        dialog: false
       }
     },
 
