@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_24_140112) do
+ActiveRecord::Schema.define(version: 2020_08_01_051207) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,8 +33,45 @@ ActiveRecord::Schema.define(version: 2020_07_24_140112) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "discographies", force: :cascade do |t|
+    t.integer "discography_type"
+    t.string "title", null: false
+    t.string "play_length", default: "0", null: false
+    t.string "label"
+    t.text "explanation"
+    t.date "sales_start_at"
+    t.integer "artist_id", null: false
+    t.integer "grammy_id"
+    t.integer "genre_id"
+    t.integer "chart"
+    t.integer "producer_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "genres", force: :cascade do |t|
     t.string "name", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "songs", force: :cascade do |t|
+    t.string "title", null: false
+    t.integer "min", default: 0, null: false
+    t.integer "sec", default: 0, null: false
+    t.integer "discography_id", null: false
+    t.integer "track_number", null: false
+    t.integer "producer_id"
+    t.integer "lyricist_id"
+    t.integer "composer_id"
+    t.integer "artist_id", null: false
+    t.integer "vocalist_id"
+    t.integer "bassist_id"
+    t.integer "guitarist_id"
+    t.integer "drummer_id"
+    t.integer "keyboardist_id"
+    t.integer "genre_id"
+    t.integer "grammy_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
