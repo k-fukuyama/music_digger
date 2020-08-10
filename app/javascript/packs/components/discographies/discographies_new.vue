@@ -326,6 +326,37 @@
           }
         ]
       }
+    },
+
+    methods: {
+      createDiscography: function () {
+
+        if (!this.discography.artist || !this.discography.title) {
+          this.dialog_title = '登録失敗'
+          this.dialog_message = 'アーティスト名、作品名の入力は必須です'
+          this.discography_dialog = true
+          return
+        }
+
+        for (var i = 0; i < this.songs.length; i++) {
+          if (!this.songs[i].title) {
+            this.dialog_title = '登録失敗'
+            this.dialog_message = '曲名の入力は必須です'
+            this.discography_dialog = true
+            return
+          }
+        }
+
+        axios.post('/api/v1/discographies', { discography: this.discography, song_infos: this.songs, grammy_flg: this.grammy_flg, set_same_artist: this.set_same_artist }).then((res) => {
+          this.dialog_title = '登録成功'
+          this.dialog_message = 'ディスコグラフィーを登録しました'
+          this.discography_dialog = true
+        }, (error) => {
+          this.dialog_title = '登録失敗'
+          this.dialog_message = '登録に失敗しました'
+          this.discography_dialog = true
+        });
+      }
     }
   }
 </script>
