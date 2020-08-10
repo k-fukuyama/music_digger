@@ -36,4 +36,14 @@ class Api::V1::DiscographiesController < ApplicationController
       render json: e.message, status: 500
     end
   end
+
+  private
+
+  def discography_params
+     params.require(:discography).permit(:title, :producer_id, :country, :sales_start_at, :explanation, :discography_type)
+  end
+
+  def song_params
+    params.require(:songs).permit(:title, :chart, :sales_start_at)
+  end
 end
