@@ -356,6 +356,10 @@
           this.dialog_message = '登録に失敗しました'
           this.discography_dialog = true
         });
+      },
+
+      sales_start_at_picker: function () {
+        this.discography.sales_start_at = this.picker
       }
     }
   }
