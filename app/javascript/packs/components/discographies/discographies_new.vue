@@ -338,7 +338,12 @@
         discography_dialog: false,
         dialog_message: '',
         dialog_title: '',
-        discography_types: [{label: 'シングル', value: 0}, {label: 'アルバム', value: 1}]
+        discography_types: [{label: 'シングル', value: 0}, {label: 'アルバム', value: 1}],
+
+        titleRules: [
+          v => !!v || 'タイトルを入力してください',
+          v => v.length <= 20 || 'Name must be less than 10 characters',
+        ]
       }
     },
 
