@@ -1,9 +1,9 @@
 class CreateDiscographies < ActiveRecord::Migration[5.2]
   def change
     create_table :discographies do |t|
-      t.integer :type
+      t.integer :discography_type
       t.string :title, null: false
-      t.time :play_length, null: false
+      t.string :play_length, null: false, default: 0
       t.string :label
       t.text :explanation
       t.date :sales_start_at
