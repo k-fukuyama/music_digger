@@ -327,7 +327,18 @@
         ],
 
         picker: new Date().toISOString().substr(0, 10),
-        dialog: false
+        dialog: false,
+
+        genres: [],
+        selectedGenre: [],
+        grammy_flg: '',
+        set_same_artist: '',
+        mins: mins,
+        secs: secs,
+        discography_dialog: false,
+        dialog_message: '',
+        dialog_title: '',
+        discography_types: [{label: 'シングル', value: 0}, {label: 'アルバム', value: 1}]
       }
     },
 
