@@ -296,6 +296,11 @@
   const token = document.getElementsByName("csrf-token")[0].getAttribute("content");
   axios.defaults.headers.common["X-CSRF-Token"] = token;
 
+  const maxMin = 101
+  const mins = [...Array(maxMin).keys()]
+  const maxsecs = 60
+  const secs = [...Array(maxsecs).keys()]
+
   export default {
     data: function() {
       return {
