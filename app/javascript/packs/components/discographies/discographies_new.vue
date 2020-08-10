@@ -418,3 +418,9 @@
     }
   }
 </script>
+
+<style scoped>
+  .input-area-of-song {
+    min-width: 130px
+  }
+</style>
