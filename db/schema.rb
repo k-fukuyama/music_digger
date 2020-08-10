@@ -34,9 +34,9 @@ ActiveRecord::Schema.define(version: 2020_08_01_051207) do
   end
 
   create_table "discographies", force: :cascade do |t|
-    t.integer "type"
+    t.integer "discography_type"
     t.string "title", null: false
-    t.time "play_length", null: false
+    t.string "play_length", default: "0", null: false
     t.string "label"
     t.text "explanation"
     t.date "sales_start_at"
@@ -57,7 +57,8 @@ ActiveRecord::Schema.define(version: 2020_08_01_051207) do
 
   create_table "songs", force: :cascade do |t|
     t.string "title", null: false
-    t.time "play_length", null: false
+    t.integer "min", default: 0, null: false
+    t.integer "sec", default: 0, null: false
     t.integer "discography_id", null: false
     t.integer "track_number", null: false
     t.integer "producer_id"
