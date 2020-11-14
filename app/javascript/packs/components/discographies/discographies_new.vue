@@ -338,7 +338,7 @@
         genres: [],
         selectedGenre: [],
         grammy_flg: '',
-        set_same_artist: '',
+        set_same_artist: false,
         mins: mins,
         secs: secs,
         discography_dialog: false,
