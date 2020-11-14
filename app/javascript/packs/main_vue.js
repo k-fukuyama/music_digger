@@ -14,7 +14,7 @@ import ArtisIndex from './components/artists/artists_index.vue'
 import ArtistNew from './components/artists/artists_new.vue'
 import GenresNew from './components/genres/genres_new.vue'
 import DiscographiesNew from './components/discographies/discographies_new.vue'
-
+import DiscographiesEdit from './components/discographies/discographies_edit.vue'
 
 Vue.use(Vuetify)
 
@@ -45,6 +45,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   new Vue({
     el: '#discographies_new',
+    router,
+    vuetify: new Vuetify()
+  })
+
+  new Vue({
+    el: '#discographies_edit',
     router,
     vuetify: new Vuetify()
   })
