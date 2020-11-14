@@ -108,7 +108,6 @@
             <v-checkbox
               v-model="set_same_artist"
               label="1曲目のアーティスト構成を2曲目以降も維持する""
-              :value="true"
               class="mx-2"
             ></v-checkbox>
           </v-radio-group>
@@ -315,22 +314,9 @@
           discography_type: 0
         },
 
-        songs: [
-          {
-            track_number:'',
-            title: '',
-            producer: '',
-            composer: '',
-            lyricist: '',
-            vocalist: '',
-            bassist: '',
-            guitarist: '',
-            drummer: '',
-            keyboardist: '',
-            min: '',
-            sec: ''
-          }
-        ],
+        songs: [],
+
+        edit_song_infos: [],
 
         picker: new Date().toISOString().substr(0, 10),
         dialog: false,
@@ -338,7 +324,7 @@
         genres: [],
         selectedGenre: [],
         grammy_flg: '',
-        set_same_artist: false,
+        set_same_artist: '',
         mins: mins,
         secs: secs,
         discography_dialog: false,
@@ -356,7 +342,17 @@
     mounted () {
       axios
         .get('/api/v1/genres.json')
-        .then(response => (this.genres = response.data))
+        .then(response => (this.genres = response.data)),
+
+      axios
+        .get(`/api/v1/discographies/${this.$route.params.id}/edit.json`)
+        .then(response => (
+                this.discography = response.data[0].discography,
+                this.discography.artist = response.data[0].artist.name,
+                this.setInfos(response.data[0].infos)
+
+              )
+         )
     },
 
     methods: {
@@ -415,6 +411,26 @@
       deleteForm(index) {
         console.log(index + 1)
         this.songs.splice(index, 1);
+      },
+
+      setInfos(songs) {
+        for (var i = 0; i < songs.length; i++) {
+          this.songs.push(
+            {
+              title: songs[i]["title"],
+              producer: songs[i]["producer"],
+              composer: songs[i]["composer"],
+              lyricist: songs[i]["lyricist"],
+              vocalist: songs[i]["vocalist"],
+              guitarist: songs[i]["guitarist"],
+              bassist:songs[i]["bassist"],
+              drummer: songs[i]["drummer"],
+              keyboardist: songs[i]["keyboardist"],
+              min: songs[i]["min"],
+              sec: songs[i]["sec"]
+            }
+          )
+        }
       }
     }
   }
