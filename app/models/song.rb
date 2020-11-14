@@ -1,5 +1,15 @@
 class Song < ApplicationRecord
   belongs_to :discography
+  belongs_to :artist
+  belongs_to :producer, class_name: 'Artist',    foreign_key: :producer_id, optional: true
+  belongs_to :vocalist, class_name: 'Artist',    foreign_key: :vocalist_id, optional: true
+  belongs_to :lyricist, class_name: 'Artist',    foreign_key: :lyricist_id, optional: true
+  belongs_to :composer, class_name: 'Artist',    foreign_key: :composer_id, optional: true
+  belongs_to :bassist, class_name: 'Artist',     foreign_key: :bassist_id, optional: true
+  belongs_to :guitarist, class_name: 'Artist',   foreign_key: :guitarist_id, optional: true
+  belongs_to :drummer, class_name: 'Artist',     foreign_key: :drummer_id, optional: true
+  belongs_to :keyboardist, class_name: 'Artist', foreign_key: :keyboardist_id, optional: true
+
   def set_song_params(song_info, artist_ids_of_hash = nil)
     artist_ids_of_hash = fetch_some_artist_ids_of_hash(song_info) unless artist_ids_of_hash.present?
     song_min = song_info[:min]
@@ -10,7 +20,7 @@ class Song < ApplicationRecord
         title: song_info[:title],
         track_number: song_info[:track_number],
         producer_id: artist_ids_of_hash[:producer_id],
-        composer_id: artist_ids_of_hash[:producer_id],
+        composer_id: artist_ids_of_hash[:composer_id],
         lyricist_id: artist_ids_of_hash[:lyricist_id],
         bassist_id: artist_ids_of_hash[:bassist_id],
         guitarist_id: artist_ids_of_hash[:guitarist_id],
