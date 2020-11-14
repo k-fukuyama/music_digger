@@ -108,6 +108,7 @@
             <v-checkbox
               v-model="set_same_artist"
               label="1曲目のアーティスト構成を2曲目以降も維持する""
+              :value="true"
               class="mx-2"
             ></v-checkbox>
           </v-radio-group>
