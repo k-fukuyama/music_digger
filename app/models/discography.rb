@@ -1,5 +1,6 @@
 class Discography < ApplicationRecord
   has_many :songs
+  belongs_to :artist
 
   enum type: { シングル: 0, アルバム: 1 }
 
