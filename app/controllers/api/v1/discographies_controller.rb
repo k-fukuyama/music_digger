@@ -47,7 +47,8 @@ class Api::V1::DiscographiesController < ApplicationController
   end
 
   def update
-
+    discography = Discography.find(params[:discography][:id])
+    discography.update_song_infos(params[:song_infos])
   end
 
   private
