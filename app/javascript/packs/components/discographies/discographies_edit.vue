@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-form @submit.prevent="createDiscography">
+    <v-form @submit.prevent="updateDiscography">
       <v-container>
       <v-row align="center">
         <v-col cols="12" sm="6">
@@ -237,7 +237,7 @@
           </template>
         </v-simple-table>
 
-        <v-btn large color="primary" @click="createDiscography">登録</v-btn>
+        <v-btn large color="primary" @click="updateDiscography(discography.id)">登録</v-btn>
 
         <v-btn
           large
@@ -305,6 +305,7 @@
     data: function() {
       return {
         discography: {
+          id: '',
           artist: '',
           title: '',
           sales_start_at: '',
@@ -350,16 +351,15 @@
                 this.discography = response.data[0].discography,
                 this.discography.artist = response.data[0].artist.name,
                 this.setInfos(response.data[0].infos)
-
               )
          )
     },
 
     methods: {
-      createDiscography: function () {
+      updateDiscography: function (id) {
 
         if (!this.discography.artist || !this.discography.title) {
-          this.dialog_title = '登録失敗'
+          this.dialog_title = '更新失敗'
           this.dialog_message = 'アーティスト名、作品名の入力は必須です'
           this.discography_dialog = true
           return
@@ -367,20 +367,20 @@
 
         for (var i = 0; i < this.songs.length; i++) {
           if (!this.songs[i].title) {
-            this.dialog_title = '登録失敗'
+            this.dialog_title = '更新失敗'
             this.dialog_message = '曲名の入力は必須です'
             this.discography_dialog = true
             return
           }
         }
 
-        axios.post('/api/v1/discographies', { discography: this.discography, song_infos: this.songs, grammy_flg: this.grammy_flg, set_same_artist: this.set_same_artist }).then((res) => {
-          this.dialog_title = '登録成功'
-          this.dialog_message = 'ディスコグラフィーを登録しました'
+        axios.patch('/api/v1/discographies/${id}', { discography: this.discography, song_infos: this.songs, grammy_flg: this.grammy_flg, set_same_artist: this.set_same_artist }).then((res) => {
+          this.dialog_title = '更新成功'
+          this.dialog_message = 'ディスコグラフィーを更新しました'
           this.discography_dialog = true
         }, (error) => {
-          this.dialog_title = '登録失敗'
-          this.dialog_message = '登録に失敗しました'
+          this.dialog_title = '更新失敗'
+          this.dialog_message = '更新に失敗しました'
           this.discography_dialog = true
         });
       },
@@ -415,8 +415,10 @@
 
       setInfos(songs) {
         for (var i = 0; i < songs.length; i++) {
+        console.log(songs[i])
           this.songs.push(
             {
+              id: songs[i]["id"],
               title: songs[i]["title"],
               producer: songs[i]["producer"],
               composer: songs[i]["composer"],
