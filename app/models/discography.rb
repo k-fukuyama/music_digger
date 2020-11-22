@@ -19,6 +19,8 @@ class Discography < ApplicationRecord
   def infos_of_song_and_artists
     self.songs.map do |song|
       {
+        id: song.id,
+        track_number: song.track_number,
         title: song.title,
         producer: song.producer&.name,
         composer: song.composer&.name,
@@ -32,5 +34,6 @@ class Discography < ApplicationRecord
         sec: song.sec
       }
     end
+    .sort_by{|info| info[:track_number]}
   end
 end
