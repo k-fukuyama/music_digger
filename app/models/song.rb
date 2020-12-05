@@ -87,4 +87,24 @@ class Song < ApplicationRecord
     artist_names_of_hash
   end
 
+  def return_reladtion_columun_name(key)
+    case key
+    when 'producer'
+      'producer_id'
+    when 'composer'
+      'composer_id'
+    when 'lyricist'
+      'lyricist_id'
+    when 'vocalist'
+      'vocalist_id'
+    when 'guitarist'
+      'guitarist_id'
+    when 'bassist'
+      'bassist_id'
+    when 'drummer'
+      'drummer_id'
+    when 'keyboardist'
+      'keyboardist_id'
+    end
+  end
 end
