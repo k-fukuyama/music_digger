@@ -59,4 +59,32 @@ class Song < ApplicationRecord
 
     ids_of_hash
   end
+
+  def fetch_artist_names_of_hash
+    artist_names_of_hash = {}
+
+    ['producer', 'composer', 'lyricist', 'vocalist', 'guitarist', 'bassist', 'drummer', 'keyboardist'].each do |key|
+      case key
+      when 'producer'
+        artist_names_of_hash["#{key}"] = producer&.name
+      when 'composer'
+        artist_names_of_hash["#{key}"] = composer&.name
+      when 'lyricist'
+        artist_names_of_hash["#{key}"] = lyricist&.name
+      when 'vocalist'
+        artist_names_of_hash["#{key}"] = vocalist&.name
+      when 'guitarist'
+        artist_names_of_hash["#{key}"] = guitarist&.name
+      when 'bassist'
+        artist_names_of_hash["#{key}"] = bassist&.name
+      when 'drummer'
+        artist_names_of_hash["#{key}"] = drummer&.name
+      when 'keyboardist'
+        artist_names_of_hash["#{key}"] = keyboardist&.name
+      end
+    end
+
+    artist_names_of_hash
+  end
+
 end
