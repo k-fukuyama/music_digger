@@ -48,7 +48,16 @@ class Api::V1::DiscographiesController < ApplicationController
 
   def update
     discography = Discography.find(params[:discography][:id])
-    discography.update_song_infos(params[:song_infos])
+    discography.assign_attributes(discography_params)
+
+    ActiveRecord::Base.transaction(requires_new: true) do
+
+      raise ActiveRecord::Rollback unless discography.update_song_infos(params[:song_infos]).exclude?(false) && discography.save!
+
+      head :ok
+    rescue ActiveRecord::Rollback, StandardError => e
+      render json: e.message, status: 500
+    end
   end
 
   private
