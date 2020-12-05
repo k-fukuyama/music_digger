@@ -63,7 +63,9 @@ class Api::V1::DiscographiesController < ApplicationController
   private
 
   def discography_params
-     params.require(:discography).permit(:title, :producer_id, :country, :sales_start_at, :explanation, :discography_type)
+     params.require(:discography).permit(
+       :title, :producer_id, :country, :sales_start_at, :explanation, :discography_type, :label, :artist_id, :chart
+     )
   end
 
   def song_params
