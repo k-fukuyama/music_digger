@@ -49,6 +49,8 @@ class Api::V1::DiscographiesController < ApplicationController
   def update
     discography = Discography.find(params[:discography][:id])
     discography.assign_attributes(discography_params)
+    artist_name = params[:discography][:artist]
+    discography.set_new_artist_id(artist_name) if discography.artist.name != artist_name
 
     ActiveRecord::Base.transaction(requires_new: true) do
 
