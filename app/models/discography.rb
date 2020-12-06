@@ -40,8 +40,10 @@ class Discography < ApplicationRecord
   def update_song_infos(song_infos)
     save_target_songs = []
     song_infos.each do |song_info|
+      song_info['artist_id'] = artist_id
+
       keys = song_info.keys
-      song = songs.select{|song| song['id'] == song_info['id']}.first
+      song = songs.select{|song| song['id'] == song_info['id']}.first || set_new_song(song_info)
 
       song.fetch_artist_names_of_hash.keys.each do |key|
         next if song_info[key].nil?
