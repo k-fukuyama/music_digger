@@ -53,8 +53,7 @@ class Api::V1::DiscographiesController < ApplicationController
     discography.set_new_artist_id(artist_name) if discography.artist.name != artist_name
 
     ActiveRecord::Base.transaction(requires_new: true) do
-
-      raise ActiveRecord::Rollback unless discography.update_song_infos(params[:song_infos]).exclude?(false) && discography.save!
+      raise ActiveRecord::Rollback unless discography.save! && discography.update_song_infos(params[:song_infos]).exclude?(false)
 
       head :ok
     rescue ActiveRecord::Rollback, StandardError => e
