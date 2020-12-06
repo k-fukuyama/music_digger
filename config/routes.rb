@@ -11,7 +11,7 @@ Rails.application.routes.draw do
       resources :artists, only: [:index, :create]
       resources :genres, only: [:index, :create]
       resources :songs, only: [:index, :create]
-      resources :discographies, only: [:index, :create, :edit]
+      resources :discographies, only: [:index, :create, :edit, :update]
     end
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

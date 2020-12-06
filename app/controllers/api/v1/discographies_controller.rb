@@ -47,13 +47,26 @@ class Api::V1::DiscographiesController < ApplicationController
   end
 
   def update
+    discography = Discography.find(params[:discography][:id])
+    discography.assign_attributes(discography_params)
+    artist_name = params[:discography][:artist]
+    discography.set_new_artist_id(artist_name) if discography.artist.name != artist_name
 
+    ActiveRecord::Base.transaction(requires_new: true) do
+      raise ActiveRecord::Rollback unless discography.save! && discography.update_song_infos(params[:song_infos]).exclude?(false)
+
+      head :ok
+    rescue ActiveRecord::Rollback, StandardError => e
+      render json: e.message, status: 500
+    end
   end
 
   private
 
   def discography_params
-     params.require(:discography).permit(:title, :producer_id, :country, :sales_start_at, :explanation, :discography_type)
+     params.require(:discography).permit(
+       :title, :producer_id, :country, :sales_start_at, :explanation, :discography_type, :label, :artist_id, :chart
+     )
   end
 
   def song_params
