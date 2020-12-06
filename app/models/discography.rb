@@ -79,4 +79,7 @@ class Discography < ApplicationRecord
     song
   end
 
+  def set_new_artist_id(artist_name)
+    self.artist_id = Artist.find_by(name: artist_name).id
+  end
 end
