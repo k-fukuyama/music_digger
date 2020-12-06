@@ -59,10 +59,8 @@ class Discography < ApplicationRecord
       end
 
       song.fetch_artist_names_of_hash.keys.each{|key| keys.delete(key)}
-
       keys.each do |key|
         next if key == 'id'
-
         if song["#{key}"] != song_info["#{key}"]
           song["#{key}"] = song_info["#{key}"]
         end
@@ -73,4 +71,12 @@ class Discography < ApplicationRecord
 
     save_target_songs.map(&:save)
   end
+
+  def set_new_song(song_info)
+    song = Song.new
+    song.set_song_params(song_info)
+    song.assign_attributes({discography_id: id, artist_id: artist_id})
+    song
+  end
+
 end
