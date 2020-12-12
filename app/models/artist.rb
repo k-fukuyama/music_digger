@@ -22,4 +22,10 @@ class Artist < ApplicationRecord
       ArtistGenre.create(artist_id: self.id, genre_id: genre_id)
     end
   end
+
+  def self.artist_names_and_ids_of_hash
+    hash = {}
+    all.select(:id, :name).map{|artist| hash["#{artist.name}"] = artist.id}
+    hash
+  end
 end
