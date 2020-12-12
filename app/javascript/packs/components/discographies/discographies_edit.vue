@@ -387,6 +387,17 @@
           }
         }
 
+          for (var i = 0; i < this.songs.length; i++) {
+            this.songs[i]['producer'] = this.artist_infos_of_hash[this.songs[i]['producer']]
+            this.songs[i]['composer'] = this.artist_infos_of_hash[this.songs[i]['composer']]
+            this.songs[i]['lyricist'] = this.artist_infos_of_hash[this.songs[i]['lyricist']]
+            this.songs[i]['vocalist'] = this.artist_infos_of_hash[this.songs[i]['vocalist']]
+            this.songs[i]['guitarist'] = this.artist_infos_of_hash[this.songs[i]['guitarist']]
+            this.songs[i]['bassist'] = this.artist_infos_of_hash[this.songs[i]['bassist']]
+            this.songs[i]['drummer'] = this.artist_infos_of_hash[this.songs[i]['drummer']]
+            this.songs[i]['keyboardist'] = this.artist_infos_of_hash[this.songs[i]['keyboardist']]
+          }
+
         axios.patch('/api/v1/discographies/${id}', { discography: this.discography, song_infos: this.songs, grammy_flg: this.grammy_flg, set_same_artist: this.set_same_artist }).then((res) => {
           this.dialog_title = '更新成功'
           this.dialog_message = 'ディスコグラフィーを更新しました'
