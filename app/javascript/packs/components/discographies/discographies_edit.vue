@@ -341,6 +341,9 @@
         dialog_title: '',
         discography_types: [{label: 'シングル', value: 0}, {label: 'アルバム', value: 1}],
 
+        artist_names: '',
+        artist_infos_of_hash: '',
+
         titleRules: [
           v => !!v || 'タイトルを入力してください',
           v => v.length <= 20 || 'Name must be less than 10 characters',
@@ -358,7 +361,9 @@
         .then(response => (
                 this.discography = response.data[0].discography,
                 this.discography.artist = response.data[0].artist.name,
-                this.setInfos(response.data[0].infos)
+                this.setInfos(response.data[0].infos),
+                this.artist_names = response.data[0].artist_names,
+                this.artist_infos_of_hash = response.data[0].artist_infos_of_hash
               )
          )
     },
