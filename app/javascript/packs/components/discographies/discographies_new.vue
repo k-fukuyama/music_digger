@@ -4,11 +4,12 @@
       <v-container>
       <v-row align="center">
         <v-col cols="12" sm="6">
-          <v-text-field
-            label="アーティスト名"
-            single-line
-            v-model="discography.artist"
-          ></v-text-field>
+        <v-autocomplete
+          v-model="discography.artist"
+          :items="artist_names"
+          item-text="name"
+          label="アーティスト名"
+          ></v-autocomplete>
         </v-col>
       </v-row>
 
@@ -146,67 +147,91 @@
                 </td>
 
                 <td class="input-area-of-song">
-                  <v-text-field
-                    v-model="song.producer"
+                  <v-autocomplete
+                    v-model="song.producer_id"
+                    :items="artist_names"
+                    item-text="name"
+                    item-value="id"
                     label="プロデューサー"
                     outlined
-                  ></v-text-field>
+                  ></v-autocomplete>
                 </td>
 
                 <td class="input-area-of-song">
-                  <v-text-field
-                    v-model="song.composer"
+                  <v-autocomplete
+                    v-model="song.composer_id"
+                    :items="artist_names"
+                    item-text="name"
+                    item-value="id"
                     label="作曲"
                     outlined
-                  ></v-text-field>
+                  ></v-autocomplete>
                 </td>
 
                 <td class="input-area-of-song">
-                  <v-text-field
-                    v-model="song.lyricist"
+                  <v-autocomplete
+                    v-model="song.lyricist_id"
+                    :items="artist_names"
+                    item-text="name"
+                    item-value="id"
                     label="作詞"
                     outlined
-                  ></v-text-field>
+                  ></v-autocomplete>
                 </td>
 
                 <td class="input-area-of-song">
-                  <v-text-field
-                    v-model="song.vocalist"
+                  <v-autocomplete
+                    v-model="song.vocalist_id"
+                    :items="artist_names"
+                    item-text="name"
+                    item-value="id"
                     label="ボーカル"
                     outlined
-                  ></v-text-field>
+                  ></v-autocomplete>
                 </td>
 
                 <td class="input-area-of-song">
-                  <v-text-field
-                    v-model="song.bassist"
+                  <v-autocomplete
+                    v-model="song.bassist_id"
+                    :items="artist_names"
+                    item-text="name"
+                    item-value="id"
                     label="ベース"
                     outlined
-                  ></v-text-field>
+                  ></v-autocomplete>
                 </td>
 
                 <td class="input-area-of-song">
-                  <v-text-field
-                    v-model="song.guitarist"
+                  <v-autocomplete
+                    v-model="song.guitarist_id"
+                    :items="artist_names"
+                    item-text="name"
+                    item-value="id"
                     label="ギター"
                     outlined
-                  ></v-text-field>
+                  ></v-autocomplete>
                 </td>
 
                 <td class="input-area-of-song">
-                  <v-text-field
-                    v-model="song.drummer"
+                  <v-autocomplete
+                    v-model="song.drummer_id"
+                    :items="artist_names"
+                    item-text="name"
+                    item-value="id"
                     label="ドラム"
                     outlined
-                  ></v-text-field>
+                  ></v-autocomplete>
                 </td>
 
                 <td class="input-area-of-song">
-                  <v-text-field
-                    v-model="song.keyboardist"
+                  <v-autocomplete
+                    v-model="song.keyboardist_id"
+                    :items="artist_names"
+                    item-text="name"
+                    item-value="id"
                     label="キーボード"
                     outlined
-                  ></v-text-field>
+                  ></v-autocomplete>
                 </td>
 
                 <td class="input-area-of-song">
