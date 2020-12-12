@@ -370,6 +370,7 @@
         dialog_message: '',
         dialog_title: '',
         discography_types: [{label: 'シングル', value: 0}, {label: 'アルバム', value: 1}],
+        artist_names: [],
 
         titleRules: [
           v => !!v || 'タイトルを入力してください',
@@ -381,7 +382,10 @@
     mounted () {
       axios
         .get('/api/v1/genres.json')
-        .then(response => (this.genres = response.data))
+        .then(response => (this.genres = response.data)),
+      axios
+        .get('/api/v1/artists.json')
+        .then(response => (this.artist_names = response.data))
     },
 
     methods: {
