@@ -8,13 +8,16 @@ class Api::V1::DiscographiesController < ApplicationController
     raise StandardError unless artist_id.present?
     discography.artist_id = artist_id
 
-    artist_ids_of_hash = Song.new.fetch_some_artist_ids_of_hash(params[:song_infos][0]) if params[:set_same_artist]
-
     ActiveRecord::Base.transaction(requires_new: true) do
       songs = []
       params[:song_infos].each do |song_info|
         song = Song.new(artist_id: artist_id)
-        song.set_song_params(song_info, artist_ids_of_hash)
+        if params[:set_same_artist]
+          song.set_same_artists(params[:song_infos][0])
+          song.assign_attributes({title: song_info[:title], track_number: song_info[:track_number], min: song_info[:min].presence || 0, sec: song_info[:sec].presence || 0})
+        else
+          song.set_song_params(song_info)
+        end
 
         songs << song
       end
