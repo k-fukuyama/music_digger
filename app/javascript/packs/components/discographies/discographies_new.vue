@@ -344,14 +344,14 @@
           {
             track_number:'',
             title: '',
-            producer: '',
-            composer: '',
-            lyricist: '',
-            vocalist: '',
-            bassist: '',
-            guitarist: '',
-            drummer: '',
-            keyboardist: '',
+            producer_id: '',
+            composer_id: '',
+            lyricist_id: '',
+            vocalist_id: '',
+            bassist_id: '',
+            guitarist_id: '',
+            drummer_id: '',
+            keyboardist_id: '',
             min: '',
             sec: ''
           }
