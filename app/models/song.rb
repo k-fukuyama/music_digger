@@ -10,23 +10,21 @@ class Song < ApplicationRecord
   belongs_to :drummer, class_name: 'Artist',     foreign_key: :drummer_id, optional: true
   belongs_to :keyboardist, class_name: 'Artist', foreign_key: :keyboardist_id, optional: true
 
-  def set_song_params(song_info, artist_ids_of_hash = nil)
-    artist_ids_of_hash = fetch_some_artist_ids_of_hash(song_info) unless artist_ids_of_hash.present?
-    song_min = song_info[:min]
-    song_sec = song_info[:sec]
-
+  def set_song_params(song_info)
     self.assign_attributes(
       {
         title: song_info[:title],
         track_number: song_info[:track_number],
-        producer_id: artist_ids_of_hash[:producer_id],
-        composer_id: artist_ids_of_hash[:composer_id],
-        lyricist_id: artist_ids_of_hash[:lyricist_id],
-        bassist_id: artist_ids_of_hash[:bassist_id],
-        guitarist_id: artist_ids_of_hash[:guitarist_id],
-        keyboardist_id: artist_ids_of_hash[:keyboardist_id],
-        min: song_min.present? ? song_min : 0,
-        sec: song_sec.present? ? song_sec : 0
+        producer_id: song_info[:producer_id],
+        vocalist_id: song_info[:vocalist_id],
+        drummer_id: song_info[:drummer_id],
+        composer_id: song_info[:composer_id],
+        lyricist_id: song_info[:lyricist_id],
+        bassist_id: song_info[:bassist_id],
+        guitarist_id: song_info[:guitarist_id],
+        keyboardist_id: song_info[:keyboardist_id],
+        min: song_info[:min].presence || 0,
+        sec: song_info[:sec].presence || 0
       }
     )
   end
