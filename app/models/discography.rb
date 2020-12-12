@@ -44,27 +44,21 @@ class Discography < ApplicationRecord
 
       keys = song_info.keys
       song = songs.select{|song| song['id'] == song_info['id']}.first || set_new_song(song_info)
-
-      song.fetch_artist_names_of_hash.keys.each do |key|
-        next if song_info[key].nil?
-
-        if song.fetch_artist_names_of_hash[key] != song_info[key]
-          if song_info[key].empty?
-            song[song.return_reladtion_columun_name(key)] = nil
-          else
-            artist_id = Artist.find_by(name: song_info[key]).id
-            song[song.return_reladtion_columun_name(key)] = artist_id
-          end
-        end
-      end
-
-      song.fetch_artist_names_of_hash.keys.each{|key| keys.delete(key)}
-      keys.each do |key|
-        next if key == 'id'
-        if song["#{key}"] != song_info["#{key}"]
-          song["#{key}"] = song_info["#{key}"]
-        end
-      end
+      song.assign_attributes(
+        {
+          title: song_info['title'],
+          producer_id: song_info['producer'],
+          composer_id: song_info['composer'],
+          lyricist_id: song_info['lyricist'],
+          vocalist_id: song_info['vocalist'],
+          guitarist_id: song_info['guitarist'],
+          bassist_id: song_info['bassist'],
+          drummer_id: song_info['bassist'],
+          keyboardist_id: song_info['keyboardist'],
+          min: song_info['min'],
+          sec: song_info['sec']
+        }
+      )
 
       save_target_songs << song
     end

@@ -145,67 +145,75 @@
                 </td>
 
                 <td class="input-area-of-song">
-                  <v-text-field
+                  <v-autocomplete
                     v-model="song.producer"
+                    :items="artist_names"
                     label="プロデューサー"
                     outlined
-                  ></v-text-field>
+                  ></v-autocomplete>
                 </td>
 
                 <td class="input-area-of-song">
-                  <v-text-field
+                  <v-autocomplete
                     v-model="song.composer"
+                    :items="artist_names"
                     label="作曲"
                     outlined
-                  ></v-text-field>
+                  ></v-autocomplete>
                 </td>
 
                 <td class="input-area-of-song">
-                  <v-text-field
+                  <v-autocomplete
                     v-model="song.lyricist"
+                    :items="artist_names"
                     label="作詞"
                     outlined
-                  ></v-text-field>
+                  ></v-autocomplete>
                 </td>
 
                 <td class="input-area-of-song">
-                  <v-text-field
+                  <v-autocomplete
                     v-model="song.vocalist"
+                    :items="artist_names"
                     label="ボーカル"
                     outlined
-                  ></v-text-field>
+                  ></v-autocomplete>
                 </td>
 
                 <td class="input-area-of-song">
-                  <v-text-field
+                  <v-autocomplete
                     v-model="song.bassist"
+                    :items="artist_names"
                     label="ベース"
                     outlined
-                  ></v-text-field>
+                  ></v-autocomplete>
                 </td>
 
                 <td class="input-area-of-song">
-                  <v-text-field
+                  <v-autocomplete
                     v-model="song.guitarist"
+                    :items="artist_names"
                     label="ギター"
                     outlined
-                  ></v-text-field>
+                  ></v-autocomplete>
                 </td>
 
                 <td class="input-area-of-song">
-                  <v-text-field
+                  <v-autocomplete
                     v-model="song.drummer"
+                    :items="artist_names"
                     label="ドラム"
                     outlined
-                  ></v-text-field>
+                  ></v-autocomplete>
                 </td>
 
                 <td class="input-area-of-song">
-                  <v-text-field
+                  <v-autocomplete
                     v-model="song.keyboardist"
+                    :items="artist_names"
                     label="キーボード"
                     outlined
-                  ></v-text-field>
+                  ></v-autocomplete>
                 </td>
 
                 <td class="input-area-of-song">
@@ -333,6 +341,9 @@
         dialog_title: '',
         discography_types: [{label: 'シングル', value: 0}, {label: 'アルバム', value: 1}],
 
+        artist_names: '',
+        artist_infos_of_hash: '',
+
         titleRules: [
           v => !!v || 'タイトルを入力してください',
           v => v.length <= 20 || 'Name must be less than 10 characters',
@@ -350,7 +361,9 @@
         .then(response => (
                 this.discography = response.data[0].discography,
                 this.discography.artist = response.data[0].artist.name,
-                this.setInfos(response.data[0].infos)
+                this.setInfos(response.data[0].infos),
+                this.artist_names = response.data[0].artist_names,
+                this.artist_infos_of_hash = response.data[0].artist_infos_of_hash
               )
          )
     },
@@ -373,6 +386,17 @@
             return
           }
         }
+
+          for (var i = 0; i < this.songs.length; i++) {
+            this.songs[i]['producer'] = this.artist_infos_of_hash[this.songs[i]['producer']]
+            this.songs[i]['composer'] = this.artist_infos_of_hash[this.songs[i]['composer']]
+            this.songs[i]['lyricist'] = this.artist_infos_of_hash[this.songs[i]['lyricist']]
+            this.songs[i]['vocalist'] = this.artist_infos_of_hash[this.songs[i]['vocalist']]
+            this.songs[i]['guitarist'] = this.artist_infos_of_hash[this.songs[i]['guitarist']]
+            this.songs[i]['bassist'] = this.artist_infos_of_hash[this.songs[i]['bassist']]
+            this.songs[i]['drummer'] = this.artist_infos_of_hash[this.songs[i]['drummer']]
+            this.songs[i]['keyboardist'] = this.artist_infos_of_hash[this.songs[i]['keyboardist']]
+          }
 
         axios.patch('/api/v1/discographies/${id}', { discography: this.discography, song_infos: this.songs, grammy_flg: this.grammy_flg, set_same_artist: this.set_same_artist }).then((res) => {
           this.dialog_title = '更新成功'
@@ -415,7 +439,6 @@
 
       setInfos(songs) {
         for (var i = 0; i < songs.length; i++) {
-        console.log(songs[i])
           this.songs.push(
             {
               id: songs[i]["id"],
