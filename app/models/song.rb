@@ -29,5 +29,18 @@ class Song < ApplicationRecord
     )
   end
 
+  def set_same_artists(song_info)
+    self.assign_attributes(
+      {
+        producer_id: song_info[:producer_id],
+        composer_id: song_info[:composer_id],
+        lyricist_id: song_info[:lyricist_id],
+        vocalist_id: song_info[:vocalist_id],
+        drummer_id: song_info[:drummer_id],
+        bassist_id: song_info[:bassist_id],
+        guitarist_id: song_info[:guitarist_id],
+        keyboardist_id: song_info[:keyboardist_id]
+      }
+    )
   end
 end
