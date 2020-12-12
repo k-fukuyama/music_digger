@@ -43,9 +43,11 @@ class Api::V1::DiscographiesController < ApplicationController
   def edit
     discography = Discography.find(params[:id])
     infos = discography.infos_of_song_and_artists
+    artist_infos_of_hash = Artist.artist_names_and_ids_of_hash
+    artist_names = artist_infos_of_hash.keys
 
     respond_to do |f|
-      f.json { render json: [discography: discography, artist: discography.artist, infos: infos] }
+      f.json { render json: [discography: discography, artist: discography.artist, infos: infos, artist_infos_of_hash: artist_infos_of_hash, artist_names: artist_names] }
     end
   end
 
