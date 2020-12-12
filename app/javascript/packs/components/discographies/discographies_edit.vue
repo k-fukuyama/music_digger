@@ -439,7 +439,6 @@
 
       setInfos(songs) {
         for (var i = 0; i < songs.length; i++) {
-        console.log(songs[i])
           this.songs.push(
             {
               id: songs[i]["id"],
