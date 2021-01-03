@@ -408,7 +408,6 @@
       },
 
       deleteForm(index) {
-        console.log(index + 1)
         this.songs.splice(index, 1);
       }
     }
