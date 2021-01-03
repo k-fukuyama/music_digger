@@ -373,12 +373,8 @@
     },
 
     mounted () {
-      axios
-        .get('/api/v1/genres.json')
-        .then(response => (this.genres = response.data)),
-      axios
-        .get('/api/v1/artists.json')
-        .then(response => (this.artist_names = response.data))
+      genre.get().then(response => (this.genres = response.data)),
+      artist.get().then(response => (this.artist_names = response.data))
     },
 
     methods: {
