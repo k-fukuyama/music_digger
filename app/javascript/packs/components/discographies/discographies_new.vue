@@ -334,7 +334,6 @@
   const artist = new Artist()
   const genre = new Genre()
   const song = new Song().property()
-  console.log(song.hoge)
 
   export default {
     data: function() {
