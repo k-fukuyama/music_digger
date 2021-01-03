@@ -333,14 +333,13 @@
 
   const artist = new Artist()
   const genre = new Genre()
-  const song = new Song().property()
 
   export default {
     data: function() {
       return {
         discography: new Discography().property(),
 
-        songs: [song],
+        songs: [new Song().property()],
 
         picker: new Date().toISOString().substr(0, 10),
         dialog: false,
