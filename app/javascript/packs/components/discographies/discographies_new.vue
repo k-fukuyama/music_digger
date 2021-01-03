@@ -412,22 +412,8 @@
       },
 
       addForm() {
-        this.songs.push(
-          {
-            track_number:"",
-            title: "",
-            producer: "",
-            composer: "",
-            lyricist: "",
-            vocalist: "",
-            bassist: "",
-            guitarist: "",
-            drummer: "",
-            keyboardist: "",
-            min: '',
-            sec: ''
-          }
-        );
+        var new_song = new Song().property()
+        this.songs.push(new_song);
       },
 
       deleteForm(index) {
