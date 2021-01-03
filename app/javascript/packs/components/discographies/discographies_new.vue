@@ -318,6 +318,9 @@
 
 <script>
   import axios from 'axios';
+  import Artist from '../../model/artist.js'
+  import Genre from '../../model/genre.js'
+  import Song from '../../model/song.js'
 
   const token = document.getElementsByName("csrf-token")[0].getAttribute("content");
   axios.defaults.headers.common["X-CSRF-Token"] = token;
@@ -326,6 +329,11 @@
   const mins = [...Array(maxMin).keys()]
   const maxsecs = 60
   const secs = [...Array(maxsecs).keys()]
+
+  const artist = new Artist()
+  const genre = new Genre()
+  const song = new Song().property()
+  console.log(song.hoge)
 
   export default {
     data: function() {
