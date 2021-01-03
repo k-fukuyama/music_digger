@@ -348,22 +348,7 @@
           discography_type: 0
         },
 
-        songs: [
-          {
-            track_number:'',
-            title: '',
-            producer_id: '',
-            composer_id: '',
-            lyricist_id: '',
-            vocalist_id: '',
-            bassist_id: '',
-            guitarist_id: '',
-            drummer_id: '',
-            keyboardist_id: '',
-            min: '',
-            sec: ''
-          }
-        ],
+        songs: [song],
 
         picker: new Date().toISOString().substr(0, 10),
         dialog: false,
