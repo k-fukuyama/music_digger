@@ -321,6 +321,7 @@
   import Artist from '../../model/artist.js'
   import Genre from '../../model/genre.js'
   import Song from '../../model/song.js'
+  import Discography from '../../model/discography.js'
 
   const token = document.getElementsByName("csrf-token")[0].getAttribute("content");
   axios.defaults.headers.common["X-CSRF-Token"] = token;
@@ -338,15 +339,7 @@
   export default {
     data: function() {
       return {
-        discography: {
-          artist: '',
-          title: '',
-          sales_start_at: '',
-          label: '',
-          chart: '',
-          explanation: '',
-          discography_type: 0
-        },
+        discography: new Discography().property(),
 
         songs: [song],
 
