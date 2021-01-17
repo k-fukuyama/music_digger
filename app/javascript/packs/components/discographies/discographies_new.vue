@@ -318,6 +318,10 @@
 
 <script>
   import axios from 'axios';
+  import Artist from '../../model/artist.js'
+  import Genre from '../../model/genre.js'
+  import Song from '../../model/song.js'
+  import Discography from '../../model/discography.js'
 
   const token = document.getElementsByName("csrf-token")[0].getAttribute("content");
   axios.defaults.headers.common["X-CSRF-Token"] = token;
@@ -327,35 +331,15 @@
   const maxsecs = 60
   const secs = [...Array(maxsecs).keys()]
 
+  const artist = new Artist()
+  const genre = new Genre()
+
   export default {
     data: function() {
       return {
-        discography: {
-          artist: '',
-          title: '',
-          sales_start_at: '',
-          label: '',
-          chart: '',
-          explanation: '',
-          discography_type: 0
-        },
+        discography: new Discography().property(),
 
-        songs: [
-          {
-            track_number:'',
-            title: '',
-            producer_id: '',
-            composer_id: '',
-            lyricist_id: '',
-            vocalist_id: '',
-            bassist_id: '',
-            guitarist_id: '',
-            drummer_id: '',
-            keyboardist_id: '',
-            min: '',
-            sec: ''
-          }
-        ],
+        songs: [new Song().property()],
 
         picker: new Date().toISOString().substr(0, 10),
         dialog: false,
@@ -380,12 +364,8 @@
     },
 
     mounted () {
-      axios
-        .get('/api/v1/genres.json')
-        .then(response => (this.genres = response.data)),
-      axios
-        .get('/api/v1/artists.json')
-        .then(response => (this.artist_names = response.data))
+      genre.get().then(response => (this.genres = response.data)),
+      artist.get().then(response => (this.artist_names = response.data))
     },
 
     methods: {
@@ -423,26 +403,11 @@
       },
 
       addForm() {
-        this.songs.push(
-          {
-            track_number:"",
-            title: "",
-            producer: "",
-            composer: "",
-            lyricist: "",
-            vocalist: "",
-            bassist: "",
-            guitarist: "",
-            drummer: "",
-            keyboardist: "",
-            min: '',
-            sec: ''
-          }
-        );
+        var new_song = new Song().property()
+        this.songs.push(new_song);
       },
 
       deleteForm(index) {
-        console.log(index + 1)
         this.songs.splice(index, 1);
       }
     }
