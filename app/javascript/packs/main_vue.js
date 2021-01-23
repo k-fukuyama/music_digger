@@ -15,6 +15,7 @@ import ArtistNew from './components/artists/artists_new.vue'
 import GenresNew from './components/genres/genres_new.vue'
 import DiscographiesNew from './components/discographies/discographies_new.vue'
 import DiscographiesEdit from './components/discographies/discographies_edit.vue'
+import GrammiesNew from './components/grammies/grammies_new.vue'
 
 Vue.use(Vuetify)
 
@@ -51,6 +52,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   new Vue({
     el: '#discographies_edit',
+    router,
+    vuetify: new Vuetify()
+  })
+
+  new Vue({
+    el: '#grammies_new',
     router,
     vuetify: new Vuetify()
   })

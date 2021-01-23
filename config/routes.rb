@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :genres, only: [:index, :new, :edit]
   resources :songs, only: [:index, :new, :edit]
   resources :discographies, only: [:index, :new, :edit, :update]
+  resources :grammies, only: [:index, :new, :edit, :update]
 
   namespace :api, {format: 'json'} do
     namespace :v1 do
@@ -12,6 +13,8 @@ Rails.application.routes.draw do
       resources :genres, only: [:index, :create]
       resources :songs, only: [:index, :create]
       resources :discographies, only: [:index, :create, :edit, :update]
+      resources :grammies, only: [:index, :create, :edit, :update]
+      get 'songs/search'
     end
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
