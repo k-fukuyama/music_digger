@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :genres, only: [:index, :new, :edit]
   resources :songs, only: [:index, :new, :edit]
   resources :discographies, only: [:index, :new, :edit, :update]
+  resources :grammies, only: [:index, :new, :edit, :update]
 
   namespace :api, {format: 'json'} do
     namespace :v1 do
