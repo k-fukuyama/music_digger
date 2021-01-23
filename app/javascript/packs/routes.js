@@ -4,6 +4,7 @@ import Index from './components/app.vue';
 import ArtistIndex from './components/artists/artists_index.vue';
 import ArtistNew from './components/artists/artists_new.vue';
 import GenresNew from './components/genres/genres_new.vue';
+import GenresEdit from './components/genres/genres_edit.vue';
 import DiscographiesNew from './components/discographies/discographies_new.vue';
 import DiscographiesEdit from './components/discographies/discographies_edit.vue';
 import GrammiesNew from './components/grammies/grammies_new.vue';
@@ -19,7 +20,8 @@ const router = new VueRouter({
     { path: '/genres/new', component: GenresNew },
     { path: '/discographies/new', component: DiscographiesNew },
     { path: '/discographies/:id/edit', component: DiscographiesEdit },
-    { path: '/grammies/new', component: GrammiesNew }
+    { path: '/grammies/new', component: GrammiesNew },
+    { path: '/genres/:id/edit', component: GenresEdit }
   ]
 });
 
