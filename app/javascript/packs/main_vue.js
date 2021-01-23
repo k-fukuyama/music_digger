@@ -8,7 +8,7 @@
 import Vuetify from "vuetify";
 import "vuetify/dist/vuetify.min.css";
 import '@mdi/font/css/materialdesignicons.css';
-import Vue from 'vue/dist/vue.esm';
+import Vue from 'vue';
 import router from './routes.js';
 import ArtisIndex from './components/artists/artists_index.vue'
 import ArtistNew from './components/artists/artists_new.vue'

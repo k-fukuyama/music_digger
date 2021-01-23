@@ -4,13 +4,15 @@
   "dependencies": {
     "@rails/webpacker": "5.1.1",
     "axios": "^0.21.1",
-    "vue": "^2.6.11",
-    "vue-loader": "^15.9.2",
-    "vue-router": "^3.3.4",
-    "vue-template-compiler": "^2.6.11",
-    "vuejs-datepicker": "^1.6.2"
+    "vue": "^2.6.12",
+    "vue-loader": "^15.9.6",
+    "vue-router": "^3.4.9",
+    "vue-template-compiler": "^2.6.12",
+    "vuejs-datepicker": "^1.6.2",
+    "vuetify": "^2.4.3"
   },
   "devDependencies": {
-    "webpack-dev-server": "^3.11.0"
+    "@mdi/font": "^5.9.55",
+    "webpack-dev-server": "^3.11.2"
   }
 }
