@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'artists/index'
   get 'artists/new'
 
-  resources :genres, only: [:index, :new, :edit]
+  resources :genres, only: [:index, :new, :edit, :update]
   resources :songs, only: [:index, :new, :edit]
   resources :discographies, only: [:index, :new, :edit, :update]
   resources :grammies, only: [:index, :new, :edit, :update]
@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   namespace :api, {format: 'json'} do
     namespace :v1 do
       resources :artists, only: [:index, :create]
-      resources :genres, only: [:index, :create]
+      resources :genres, only: [:index, :create, :edit, :update]
       resources :songs, only: [:index, :create]
       resources :discographies, only: [:index, :create, :edit, :update]
       resources :grammies, only: [:index, :create, :edit, :update]

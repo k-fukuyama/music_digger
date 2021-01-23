@@ -13,6 +13,7 @@ import router from './routes.js';
 import ArtisIndex from './components/artists/artists_index.vue'
 import ArtistNew from './components/artists/artists_new.vue'
 import GenresNew from './components/genres/genres_new.vue'
+import GenresEdit from './components/genres/genres_edit.vue'
 import DiscographiesNew from './components/discographies/discographies_new.vue'
 import DiscographiesEdit from './components/discographies/discographies_edit.vue'
 import GrammiesNew from './components/grammies/grammies_new.vue'
@@ -58,6 +59,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   new Vue({
     el: '#grammies_new',
+    router,
+    vuetify: new Vuetify()
+  })
+
+  new Vue({
+    el: '#genres_edit',
     router,
     vuetify: new Vuetify()
   })

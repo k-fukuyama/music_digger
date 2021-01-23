@@ -14,6 +14,20 @@ class Api::V1::GenresController < ApplicationController
     end
   end
 
+  def edit
+    render json: Genre.find(params[:id])
+  end
+
+  def update
+    genre = Genre.find(params[:id])
+    genre.name = params[:name]
+    if genre.save
+      head :ok
+    else
+      render json: e.message, status: 500
+    end
+  end
+
   private
 
   def genre_params
