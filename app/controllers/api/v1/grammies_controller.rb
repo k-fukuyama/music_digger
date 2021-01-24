@@ -7,7 +7,7 @@ class Api::V1::GrammiesController < ApplicationController
     if grammy.save
       head :ok
     else
-      render json: e.message, status: 500
+      render json: 'グラミー作成に失敗しました', status: 500
     end
   end
 
