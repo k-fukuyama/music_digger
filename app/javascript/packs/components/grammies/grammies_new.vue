@@ -1,88 +1,21 @@
 <template>
   <v-app>
-    <v-form @submit.prevent="createGrammyOfSingleType">
-      <v-container>
-        <v-row align="center">
-          <v-col cols="12" sm="6">
-          <v-autocomplete
-            v-model="grammy_artist_id"
-            :items="artists"
-            item-text="name"
-            item-value="id"
-            label="アーティスト名"
-            ></v-autocomplete>
-          </v-col>
-        </v-row>
-
-        <v-row align="center">
-          <v-col cols="12" sm="6">
-          <v-autocomplete
-            v-model="grammy_song_id"
-            :items="artist_songs"
-            item-text="title"
-            item-value="id"
-            label="曲"
-            ></v-autocomplete>
-          </v-col>
-        </v-row>
-
-        <v-row align="center">
-          <v-col cols="12" md="6">
-            <v-select
-             v-model="grammy_type"
-             item-text="name"
-             item-value="value"
-             :items="grammy_types"
-              attach
-              chips
-              label="受賞部門"
-            ></v-select>
-          </v-col>
-        </v-row>
-
-        <v-row align="center">
-          <v-col cols="12" md="6">
-            <v-select
-             v-model="grammy_year"
-             item-text="label"
-             item-value="value"
-             :items="grammy_years"
-              attach
-              chips
-              label="受賞した年"
-            ></v-select>
-          </v-col>
-        </v-row>
-
-        <v-row align="center">
-          <v-col cols="12" md="6">
-            <v-select
-             v-model="genre_id"
-             item-text="name"
-             item-value="id"
-             :items="genres"
-              attach
-              chips
-              label="ジャンル"
-            ></v-select>
-          </v-col>
-        </v-row>
-      </v-container>
-      <v-btn large color="primary" @click="createGrammyOfSingleType">グラミー受賞作品に登録</v-btn>
-    </v-form>
-
-    <v-row justify="center">
-      <v-dialog v-model="grammy_dialog" persistent max-width="290">
-        <v-card>
-          <v-card-title class="headline">{{dialog_title}}</v-card-title>
-          <v-card-text>{{dialog_message}}</v-card-text>
-          <v-card-actions>
-            <v-spacer></v-spacer>
-            <v-btn color="green darken-1" text @click="grammy_dialog = false">閉じる</v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-dialog>
-    </v-row>
+    <v-card>
+      <v-tabs
+          background-color="deep-purple accent-4"
+          center-active
+          dark
+      >
+      <v-tab v-on:click="buttonChange('single')">Single</v-tab>
+      <v-tab v-on:click="buttonChange('album')">Album</v-tab>
+      </v-tabs>
+    </v-card>
+    <div v-show="grammyType=='single'">
+      <SingleGrammies></SingleGrammies>
+    </div>
+    <div v-show="grammyType=='album'">
+      <p>album</p>
+    </div>
   </v-app>
 </template>
 
@@ -92,6 +25,7 @@
   import Genre from '../../model/genre.js'
   import Song from '../../model/song.js'
   import Discography from '../../model/discography.js'
+  import SingleGrammies from './single_grammies.vue'
 
   const token = document.getElementsByName("csrf-token")[0].getAttribute("content");
   axios.defaults.headers.common["X-CSRF-Token"] = token;
@@ -100,6 +34,9 @@
   const genre = new Genre()
 
   export default {
+    components: {
+      SingleGrammies
+    },
     data: function() {
       return {
         genres: [],
@@ -114,7 +51,8 @@
         grammy_years: this.generateYear(),
         dialog_title: '',
         dialog_message: '',
-        grammy_dialog: false
+        grammy_dialog: false,
+        grammyType: 'single'
       }
     },
 
@@ -150,6 +88,10 @@
       generateYear: function (){
         const year = new Date().getFullYear()
         return Array.from({length: year - 1959}, (value, index) => 1959 + index)
+      },
+
+      buttonChange: function (type){
+        this.grammyType = type
       }
     },
     watch: {
