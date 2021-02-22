@@ -14,28 +14,19 @@
       <SingleGrammies></SingleGrammies>
     </div>
     <div v-show="grammyType=='album'">
-      <p>album</p>
+      <AlbumGrammies></AlbumGrammies>
     </div>
   </v-app>
 </template>
 
 <script>
-  import axios from 'axios';
-  import Artist from '../../model/artist.js'
-  import Genre from '../../model/genre.js'
-  import Song from '../../model/song.js'
-  import Discography from '../../model/discography.js'
   import SingleGrammies from './single_grammies.vue'
-
-  const token = document.getElementsByName("csrf-token")[0].getAttribute("content");
-  axios.defaults.headers.common["X-CSRF-Token"] = token;
-
-  const artist = new Artist()
-  const genre = new Genre()
+  import AlbumGrammies from './album_grammies.vue'
 
   export default {
     components: {
-      SingleGrammies
+      SingleGrammies,
+      AlbumGrammies
     },
     data: function() {
       return {
