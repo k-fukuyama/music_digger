@@ -14,6 +14,6 @@ class Api::V1::GrammiesController < ApplicationController
   private
 
   def grammy_params
-     params.require(:grammy).permit(:artist_id, :song_id, :genre_id, :grammy_type, :year)
+     params.require(:grammy).permit(:artist_id, :song_id, :album_id, :genre_id, :grammy_type, :year)
   end
 end

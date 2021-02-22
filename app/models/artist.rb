@@ -5,6 +5,7 @@ class Artist < ApplicationRecord
   has_many :artist_genres, dependent: :destroy
   has_many :genres, through: :artist_genres
   has_many :songs
+  has_many :discographies
 
   enum gender: { 男性: 0, 女性: 1, その他: 2 }
 
@@ -22,6 +23,10 @@ class Artist < ApplicationRecord
     genre_ids.each do |genre_id|
       ArtistGenre.create(artist_id: self.id, genre_id: genre_id)
     end
+  end
+
+  def fetch_albums
+    discographies.where(discography_type: 1)
   end
 
   def self.artist_names_and_ids_of_hash

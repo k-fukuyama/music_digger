@@ -15,6 +15,7 @@ Rails.application.routes.draw do
       resources :discographies, only: [:index, :create, :edit, :update]
       resources :grammies, only: [:index, :create, :edit, :update]
       get 'songs/search'
+      get 'albums/search'
     end
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
