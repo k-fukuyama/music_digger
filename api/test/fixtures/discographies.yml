@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  discography_type: 1
+  title: MyString
+  play_length: MyString
+  label: MyString
+  explanation: MyText
+  sales_start_at: 2021-04-11
+  artist_id: 1
+  grammy_id: 1
+  genre_id: 1
+  chart: 1
+  producer_id: 1
+
+two:
+  discography_type: 1
+  title: MyString
+  play_length: MyString
+  label: MyString
+  explanation: MyText
+  sales_start_at: 2021-04-11
+  artist_id: 1
+  grammy_id: 1
+  genre_id: 1
+  chart: 1
+  producer_id: 1
