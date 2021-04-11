@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+  web:
+    build: ./api
+    command: /bin/sh -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    ports:
+      - '3000:3000'
+    depends_on:
+      - db
+    volumes:
+      - ./api:/app
+      - bundle:/usr/local/bundle
+    tty: true
+    stdin_open: true
+  db:
+    image: postgres
+    volumes:
+      - psgl_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: password
+      PGTZ: Asia/Tokyo
+    ports:
+      - '5432:5432'
+  front:
+    build: ./front
+    command: /bin/sh -c "yarn && yarn serve"
+    container_name: front
+    tty: true
+    ports:
+      - '8080:8080'
+    volumes:
+      - ./front:/front
+      - vue-cli-node-modules-volume:/front/node_modules
+volumes:
+  psgl_data:
+  bundle:
+  vue-cli-node-modules-volume:

@@ -1,0 +1,37 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  min: 1
+  sec: 1
+  discography_id: 1
+  track_number: 1
+  producer_id: 1
+  lyricist_id: 1
+  composer_id: 1
+  artist_id: 1
+  vocalist_id: 1
+  bassist_id: 1
+  guitarist_id: 1
+  drummer_id: 1
+  keyboardist_id: 1
+  genre_id: 1
+  grammy_id: 1
+
+two:
+  title: MyString
+  min: 1
+  sec: 1
+  discography_id: 1
+  track_number: 1
+  producer_id: 1
+  lyricist_id: 1
+  composer_id: 1
+  artist_id: 1
+  vocalist_id: 1
+  bassist_id: 1
+  guitarist_id: 1
+  drummer_id: 1
+  keyboardist_id: 1
+  genre_id: 1
+  grammy_id: 1
