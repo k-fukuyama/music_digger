@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-form @submit.prevent="createArtist">
+    <v-form @submit.prevent="createArtist()">
       <v-container>
         <v-row align="center">
           <v-col cols="12" sm="6">
@@ -59,7 +59,7 @@
           </v-radio-group>
         </v-row>
 
-        <v-btn large color="primary" @click="createArtist">登録</v-btn>
+        <v-btn large color="primary" @click="createArtist()">登録</v-btn>
       </v-container>
     </v-form>
 
@@ -125,9 +125,10 @@
     },
     methods: {
       createArtist: function () {
+        console.log("hoge")
         if (!this.artist.name || !this.artist.gender) return;
-        axios.post('/api/v1/artists', { artist: this.artist, genre_ids: this.selectedGenre }).then((res) => {
-          if (res.status == 200) {
+        axios.post('http://localhost:3000/api/v1/artists', { artist: this.artist, genre_ids: this.selectedGenre }).then((res) => {
+          if (res.status == 201) {
             this.$router.push("/artists/index").catch(()=>{});
           }else{
             console.log("error")
