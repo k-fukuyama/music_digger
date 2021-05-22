@@ -95,9 +95,6 @@
 <script>
   import axios from 'axios';
 
-  const token = document.getElementsByName("csrf-token")[0].getAttribute("content");
-  axios.defaults.headers.common["X-CSRF-Token"] = token;
-
   export default {
     data: function() {
       return {
@@ -107,41 +104,33 @@
           country: '',
           birth: ''
         },
-
         picker: new Date().toISOString().substr(0, 10),
         dialog: false,
-
         genders: ["男性", "女性", "その他"],
-
         genres: [],
         selectedGenre: [],
-
         nameRules: [
           v => !!v || 'アーティスト名を入力してください',
           v => v.length <= 20 || 'Name must be less than 10 characters',
         ],
-
         genderRules: [
           v => !!v || '性別を選択してください'
         ]
       }
     },
-
     mounted () {
       axios
         .get('/api/v1/genres.json')
         .then(response => (this.genres = response.data))
     },
-
     methods: {
       createArtist: function () {
         if (!this.artist.name || !this.artist.gender) return;
-
         axios.post('/api/v1/artists', { artist: this.artist, genre_ids: this.selectedGenre }).then((res) => {
           if (res.status == 200) {
             this.$router.push("/artists/index").catch(()=>{});
           }else{
-
+            console.log("error")
           }
         }, (error) => {
           console.log(error);
@@ -154,5 +143,3 @@
     }
   }
 </script>
-
-<style scoped></style>
