@@ -9,5 +9,6 @@ module V1
   end
 
     mount V1::ArtistsApi
+    mount V1::GenresApi
   end
 end
