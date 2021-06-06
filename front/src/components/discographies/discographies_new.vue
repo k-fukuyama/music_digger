@@ -7,6 +7,7 @@
           <v-autocomplete
             v-model="discography.artist"
             :items="artist_names"
+            item-value="id"
             item-text="name"
             label="アーティスト名"
             ></v-autocomplete>
@@ -273,13 +274,36 @@
       </v-btn>
       <v-btn large color="primary" @click="createDiscography">登録</v-btn>
     </v-form>
+    <v-row justify="center">
+      <v-dialog
+        v-model="dialog"
+        max-width="350"
+      >
+        <v-card>
+          <v-card-title class="headline">発売日を選択</v-card-title>
+            <v-card-text>
+              <v-date-picker v-model="picker"></v-date-picker>
+            </v-card-text>
+
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              <v-btn
+                color="green darken-1"
+                text
+                v-on:click="sales_start_at_picker"
+                @click="dialog = false"
+              >
+                登録
+              </v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-dialog>
+    </v-row>
   </v-app>
 </template>
 
 <script>
-  import axios from 'axios';
   import Artist from '../../model/artist.js'
-  import Genre from '../../model/genre.js'
   import Song from '../../model/song.js'
   import Discography from '../../model/discography.js'
 
@@ -289,7 +313,6 @@
   const secs = [...Array(maxsecs).keys()]
 
   const artist = new Artist()
-  const genre = new Genre()
 
   export default {
     data: function() {
@@ -321,7 +344,6 @@
     },
 
     mounted () {
-      genre.get().then(response => (this.genres = response.data)),
       artist.get().then(response => (this.artist_names = response.data))
     },
 
@@ -344,17 +366,7 @@
           }
         }
 
-        axios.post('/api/v1/discographies', { discography: this.discography, song_infos: this.songs, grammy_flg: this.grammy_flg, set_same_artist: this.set_same_artist }).then((res) => {
-          this.dialog_title = '登録成功'
-          this.dialog_message = 'ディスコグラフィーを登録しました'
-          this.discography_dialog = true
-          console.log(res)
-        }, (error) => {
-          console.log(error)
-          this.dialog_title = '登録失敗'
-          this.dialog_message = '登録に失敗しました'
-          this.discography_dialog = true
-        });
+        new Discography().post({ discography: this.discography, song_infos: this.songs, grammy_flg: this.grammy_flg, set_same_artist: this.set_same_artist })
       },
 
       sales_start_at_picker: function () {

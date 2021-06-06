@@ -14,12 +14,6 @@ export default class Discography {
   }
 
   post(params) {
-    return axios.post('http://localhost:3000/api/v1/genres', 
-    { 
-      discography: params['discography'], 
-      song_infos: params['songs'], 
-      grammy_flg: params['grammy_flg'], 
-      set_same_artist: params['set_same_artist'] 
-    })
+    return axios.post('http://localhost:3000/api/v1/discographies', params)
   }
 }
