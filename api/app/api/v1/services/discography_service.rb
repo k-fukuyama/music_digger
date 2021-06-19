@@ -51,6 +51,7 @@ module V1
             end
             songs = songs.map(&:attributes)
             Song.insert_all(songs)
+            true
           end
         end
       end
