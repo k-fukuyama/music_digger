@@ -10,5 +10,6 @@ module V1
 
     mount V1::ArtistsApi
     mount V1::GenresApi
+    mount V1::DiscographiesApi
   end
 end
