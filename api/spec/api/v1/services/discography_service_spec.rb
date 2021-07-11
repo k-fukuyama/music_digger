@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe V1::Services::DiscographyService do
   describe '.create!' do
-    subject { described_class.create!(discography, song_infos)}
+    subject { described_class.create!(discography, song_infos, grammy_flg)}
     let(:discography) do
       {
         artist: artist.id,
@@ -31,6 +31,7 @@ RSpec.describe V1::Services::DiscographyService do
         }
       ]
     end
+    let(:grammy_flg) { true }
     let(:artist) { create(:artist) }
     let(:producer) { create(:artist) }
 
@@ -40,6 +41,19 @@ RSpec.describe V1::Services::DiscographyService do
 
     it 'creates songs' do
       expect{ subject }.to change { Song.count }.from(0).to(1)
+    end
+
+    context 'when grammy flg is true' do
+      it 'creates grammy' do
+        expect{ subject }.to change { Grammy.count }.from(0).to(1)
+      end
+    end
+
+    context 'when grammy flg is false' do
+      let(:grammy_flg) { false }
+      it 'does not create grammy' do
+        expect{ subject }.not_to change { Grammy.count }
+      end
     end
   end
 end

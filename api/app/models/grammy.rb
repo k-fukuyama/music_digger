@@ -5,6 +5,6 @@ class Grammy < ApplicationRecord
 
   belongs_to :artist
   belongs_to :discography, foreign_key: :album_id, optional: true
-  belongs_to :genre
+  belongs_to :genre, optional: true
   belongs_to :song, foreign_key: :song_id, optional: true
 end

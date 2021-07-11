@@ -2,7 +2,7 @@ module V1
   module Services
     class DiscographyService
       class << self
-        def create!(discography, song_infos)
+        def create!(discography, song_infos, grammy_flg)
           artist_id = Artist.find_by(id: discography[:artist])&.id
           return if artist_id.blank?
 
@@ -51,6 +51,9 @@ module V1
             end
             songs = songs.map(&:attributes)
             Song.insert_all(songs)
+            if grammy_flg.present?
+              Grammy.create!(artist_id: artist_id, album_id: discography.id)
+            end
             true
           end
         end
