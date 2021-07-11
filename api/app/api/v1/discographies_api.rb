@@ -3,7 +3,7 @@ module V1
     resources :discographies do
       desc 'pots discography'
       post do
-        Services::DiscographyService.create!(params[:discography], params[:song_infos])
+        Services::DiscographyService.create!(params[:discography], params[:song_infos], params[:grammy_flg])
 
         present ({ isCreated: true })
       end
