@@ -16,4 +16,8 @@ export default class Discography {
   post(params) {
     return axios.post('http://localhost:3000/api/v1/discographies', params)
   }
+
+  getDiscography(search_params = ''){
+    return axios.get('http://localhost:3000/api/v1/discographies', {params:{ search_word: search_params}})
+  }
 }
