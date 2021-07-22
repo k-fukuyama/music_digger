@@ -2,6 +2,24 @@ module V1
   module Services
     class DiscographyService
       class << self
+        def fetch_discographies(search_word = '')
+          discographies = Discography.preload(:artist)
+          discographies = if search_word.present?
+                            discographies.where('title like?', "%#{search_word}%")
+                          else
+                            discographies
+                          end
+          discographies.map do |discography|
+            {
+              id: discography.id,
+              title: discography.title,
+              label: discography.label,
+              sales_start_at: discography.sales_start_at,
+              artist_name: discography.artist.name
+            }
+          end
+        end
+
         def create!(discography, song_infos, grammy_flg)
           artist_id = Artist.find_by(id: discography[:artist])&.id
           return if artist_id.blank?

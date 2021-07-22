@@ -1,6 +1,41 @@
 require 'rails_helper'
 
 RSpec.describe V1::Services::DiscographyService do
+  describe '.fetch_discographies' do
+    subject { described_class.fetch_discographies(search_word) }
+
+    let!(:discography) { create(:discography) }
+    let(:expected) do
+      [
+        {
+          id: discography.id,
+          title: discography.title,
+          label: discography.label,
+          sales_start_at: discography.sales_start_at,
+          artist_name: discography.artist.name
+        }
+      ]
+    end
+
+    context 'when there is search_word' do
+      let(:search_word) { 'hog' }
+
+      before { discography.update(title: 'hoge') }
+
+      it 'returns discography by search_word' do
+        expect(subject).to eq expected
+      end
+    end
+
+    context 'when there is not search_word' do
+      let(:search_word) { '' }
+
+      it 'returns discography' do
+        expect(subject).to eq expected
+      end
+    end
+  end
+
   describe '.create!' do
     subject { described_class.create!(discography, song_infos, grammy_flg)}
     let(:discography) do
