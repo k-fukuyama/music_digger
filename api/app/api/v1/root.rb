@@ -8,6 +8,10 @@ module V1
     error_response(message: "Internal server error", status: 500)
   end
 
+  rescue_from ActiveRecord::RecordNotFound do |e|
+    rack_response({ message: e.message, status: 404 }.to_json, 404)
+  end
+
     mount V1::ArtistsApi
     mount V1::GenresApi
     mount V1::DiscographiesApi

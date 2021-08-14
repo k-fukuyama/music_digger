@@ -33,7 +33,7 @@
             </thead>
             <tbody>
               <tr v-for="artist in artists" :key="artist.name">
-                <td>{{ artist.name }}</td>
+                <td @click="moveToArtistPage(artist.id)">{{ artist.name }}</td>
                 <td>{{ artist.gender }}</td>
               </tr>
             </tbody>
@@ -46,6 +46,9 @@
 
 <script>
 import axios from 'axios';
+import Artist from '../../model/artist.js'
+
+const artist = new Artist()
 
 export default {
   data: function () {
@@ -55,17 +58,21 @@ export default {
     }
   },
 
-  mounted () {
-    axios
-      .get('/api/v1/artists.json')
+  created () {
+    artist
+      .get()
       .then(response => (this.artists = response.data))
   },
 
   methods: {
     submit() {
       axios
-        .get('/api/v1/artists.json', {params:{ search_params: this.search_params}})
+        .get('http://localhost:3000/api/v1/artists', {params:{ search_params: this.search_params}})
         .then(response => (this.artists = response.data))
+    },
+
+    moveToArtistPage(artist_id) {
+      this.$router.push({ name:'ArtistEdit',params: { id: artist_id}})
     }
   }
 }

@@ -34,4 +34,13 @@ class Artist < ApplicationRecord
     all.select(:id, :name).map{|artist| hash["#{artist.name}"] = artist.id}
     hash
   end
+
+  def build_birth_day_for_api
+    return if  birth_year.nil? || birth_month.nil? || birth_day.nil?
+
+    fixed_birth_month = birth_month <= 9 ? "0#{birth_month}" : birth_month
+    fixed_birth_day = birth_day <= 9 ? "0#{birth_day}" : birth_day
+
+    "#{birth_year}-#{fixed_birth_month}-#{fixed_birth_day}"
+  end
 end
